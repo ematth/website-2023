@@ -26,5 +26,32 @@
 Quisque mattis volutpat lorem vitae feugiat.</description>
     </item>
     
+    <item>
+      <title>About</title>
+      <link>https://ematth.dev/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ematth.dev/about/</guid>
+      <description>Evan Matthews is a computer science graduate student at the University of Illinois Urbana-Champaign. His research focuses primarily on audio computing and AI/ML.
+When not programming or doing research, Evan enjoys playing piano and biking.
+Education University of Illinois Urbana-Champaign -&amp;gt; 2023-Present M.S. Computer Science Urbana, IL University of Illinois Urbana-Champaign -&amp;gt; 2019-2023 B.S. Computer Science + Music Urbana, IL
+Metamora Township High School -&amp;gt; 2015-2019 Metamora, IL</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://ematth.dev/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ematth.dev/projects/</guid>
+      <description>Personal Website Year: Spring 2023
+Tools: HTML, CSS, Markdown, Github Pages
+Built with Hugo and designed using the XMIN theme. Read more about my journey through (or around) web development very soon.
+Absentea Year: Spring 2022
+Collaborators: Majeed Akinlusi, Zeyang &amp;ldquo;Hans&amp;rdquo; Zhang, Kevin Zhou
+Tools: React.js, SQL
+Final project for CS 411; database webapp designed for comparing schedules and absences between members of an organization or group. Inspiration taken from scheduling sites like When2meet and Doodle.</description>
+    </item>
+    
   </channel>
 </rss>

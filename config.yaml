@@ -18,7 +18,7 @@ menu:
       url: "about/"
       weight: 2
     - name: Projects
-      url: "proj/"
+      url: "projects/"
       weight: 3
     - name: Blog
       url: "note/"
@@ -26,6 +26,9 @@ menu:
     - name: Articles
       url: "post/"
       weight: 5
+    - name: Resume
+      url: "resume.pdf"
+      weight: 99
     # - name: Categories
     #   url: "categories/"
     #   weight: 3
