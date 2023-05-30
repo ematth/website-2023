@@ -44,13 +44,12 @@ Metamora Township High School -&amp;gt; 2015-2019 Metamora, IL</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ematth.dev/projects/</guid>
-      <description>Personal Website Year: Spring 2023
+      <description>Note: Code for some projects on this list cannot be shared publicly because doing so would be a violation of UIUC&amp;rsquo;s policies on Academic Integrity.
+Personal Website Year: May 2023
 Tools: HTML, CSS, Markdown, Github Pages
 Built with Hugo and designed using the XMIN theme. Read more about my journey through (or around) web development very soon.
-Absentea Year: Spring 2022
-Collaborators: Majeed Akinlusi, Zeyang &amp;ldquo;Hans&amp;rdquo; Zhang, Kevin Zhou
-Tools: React.js, SQL
-Final project for CS 411; database webapp designed for comparing schedules and absences between members of an organization or group. Inspiration taken from scheduling sites like When2meet and Doodle.</description>
+Capstone: Transcribing Monophonic Audio with Deep-Learning Data Year: Spring 2023
+Advisor: Zuofu Cheng</description>
     </item>
     
   </channel>

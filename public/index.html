@@ -39,7 +39,7 @@
 <p><i>Welcome to my website!</i> As you can see, it&rsquo;s currently in the works, as there&rsquo;s practically nothing here.<br> That is expected to change soon.</p>
 <p>All pages can be accessed from the menu at the top of the page. This is where you can access my <a href="/note/">personal blog</a> where you can read my fun subjective posts on various topics. For more educational posts, check out <a href="/post/">articles</a> where I hope to summarize topics related to music, programming, audio computing, and mathematics in an easily-digestible format.</p>
 <hr></hr>
-<h3 id="recent-updates">Recent updates:</h3>
+<h3 id="recent-updates">Recent Updates:</h3>
 
 
 <ul>
@@ -59,11 +59,25 @@
 </ul>
 
   <footer>
-  <script defer src="//yihui.org/js/math-code.js"></script>
-<script defer src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
 
-<script defer src="//yihui.org/js/center-img.js"></script>
 
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
   
   <hr/>
   © Evan Matthews 2023 | <a href="https://github.com/evanmm3">Github</a>

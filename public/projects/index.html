@@ -36,14 +36,34 @@
 </div>
 
 <main>
+<blockquote>
+<p><strong>Note:</strong>
+Code for some projects on this list cannot be shared publicly because doing so would be a violation of UIUC&rsquo;s policies on <a href="https://provost.illinois.edu/policies/policies/academic-integrity/students-quick-reference-guide-to-academic-integrity/">Academic Integrity.</a></p>
+</blockquote>
 <h1 id="personal-website">Personal Website</h1>
+<ul>
+<li>
+<p><b>Year:</b> May 2023</p>
+</li>
+<li>
+<p><b>Tools:</b> HTML, CSS, Markdown, Github Pages</p>
+<p>Built with <a href="https://gohugo.io/">Hugo</a> and designed using the <a href="https://xmin.yihui.org/">XMIN</a> theme. Read more about my journey through (<i>or around</i>) web development <i>very soon.</i></p>
+</li>
+</ul>
+<h1 id="capstone-transcribing-monophonic-audio-with-deep-learning-data">Capstone: Transcribing Monophonic Audio with Deep-Learning Data</h1>
 <ul>
 <li>
 <p><b>Year:</b> Spring 2023</p>
 </li>
 <li>
-<p><b>Tools:</b> HTML, CSS, Markdown, Github Pages</p>
-<p>Built with <a href="https://gohugo.io/">Hugo</a> and designed using the <a href="https://xmin.yihui.org/">XMIN</a> theme. Read more about my journey through (<i>or around</i>) web development <i>very soon.</i></p>
+<p><b>Advisor:</b> Zuofu Cheng</p>
+</li>
+<li>
+<p><b>Tools:</b> MIDI/MusicXML, MuseScore, Python</p>
+</li>
+<li>
+<p><b><a href="https://singsong.gatsbyjs.io/">Website</a>, <a href="/capstone.pdf">Presentation</a></b></p>
+<p>Combined senior capstone project with Kevin Zhou. Our main goal was to implement a machine-learning model for rudimentary conversion of raw audio recordings into readable sheet music. I created the database of examples to be recorded and handled the business side of the study, and Kevin put together the webapp <a href="https://singsong.gatsbyjs.io/">SingSong</a> for collecting recording data.</p>
 </li>
 </ul>
 <h1 id="absentea">Absentea</h1>
@@ -84,12 +104,14 @@
 <p><b>Year:</b> Fall 2021 - Spring 2022</p>
 </li>
 <li>
-<p><b>Director:</b> Sever Tipei</p>
+<p><b>Director:</b> Heinrich Taube</p>
+</li>
+<li>
+<p><b>Tools:</b> Python, <a href="https://pypi.org/project/python-rtmidi/">rtmidi</a>, <a href="https://github.com/musx-admin/musx">musx</a></p>
 </li>
 <li>
 <p><b><a href="https://github.com/evanmm3/Disklavier-Echo-Effect">Github</a></b></p>
-<p>This is a course project for MUS 305 at the University of Illinois Champaign-Urbana, under the course direction of Dr. Heinrich Taube</p>
-<p>This project aims to simulate an &ldquo;echo&rdquo; effect on a Yamaha Disklavier piano, on up to 16 key simulatenously, with repetitions and diminishing of echo sound up to the performer. The program runs using the musx library and uses threading to run real-time outputs to a Yamaha Disklavier.</p>
+<p>&ldquo;This is a course project for MUS 305 at the University of Illinois Champaign-Urbana, under the course direction of Dr. Heinrich Taube. This project aims to simulate an &ldquo;echo&rdquo; effect on a Yamaha Disklavier piano, on up to 16 key simulatenously, with repetitions and diminishing of echo sound up to the performer. The program runs using the musx library and uses threading to run real-time outputs to a Yamaha Disklavier.&rdquo;</p>
 </li>
 </ul>
 <h1 id="pan-lang">Pan-Lang</h1>
@@ -102,7 +124,7 @@
 </li>
 <li>
 <p><b><a href="https://pan-lang.github.io/">Website</a>, <a href="https://github.com/Pan-Lang/pan-lang.github.io">Github</a>, <a href="https://devpost.com/software/pan-lang">Devpost</a></b></p>
-<p>A food pantry webapp designed providing translated lists and descriptions to patrons of Champaign and Urbana-area foodbanks. Second prize winner of <a href="https://pyghack2020.devpost.com/">PYGHACK 2020</a>.</p>
+<p>Second prize winner at <a href="https://pyghack2020.devpost.com/">PYGHACK 2020</a>: a food pantry webapp designed providing translated lists and descriptions to patrons of Champaign and Urbana-area foodbanks.</p>
 </li>
 </ul>
 <h1 id="spotigraph">Spotigraph</h1>
@@ -122,11 +144,25 @@
 </main>
 
   <footer>
-  <script defer src="//yihui.org/js/math-code.js"></script>
-<script defer src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
 
-<script defer src="//yihui.org/js/center-img.js"></script>
 
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
   
   <hr/>
   © Evan Matthews 2023 | <a href="https://github.com/evanmm3">Github</a>
