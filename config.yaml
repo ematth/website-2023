@@ -39,7 +39,7 @@ menu:
 
 params:
   description: "Website created with Hugo and the XMin theme"
-  footer: "&copy; Evan M. Matthews {Year} | [Github](https://github.com/evanmm3)"
+  footer: "&copy; Evan Matthews {Year} | [Github](https://github.com/evanmm3)"
 
 markup:
   highlight:
