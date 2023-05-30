@@ -2,57 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/note/2017/06/14/another-note/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <loc>https://ematth.dev/post/</loc>
+    <lastmod>2023-05-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <loc>https://ematth.dev/categories/</loc>
+    <lastmod>2023-05-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/example/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <loc>https://ematth.dev/categories/example/</loc>
+    <lastmod>2023-05-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <loc>https://ematth.dev/post/2023/05/29/example-page/</loc>
+    <lastmod>2023-05-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/note/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <loc>https://ematth.dev/</loc>
+    <lastmod>2023-05-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <loc>https://ematth.dev/tags/markdown/</loc>
+    <lastmod>2023-05-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/tutorial/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <loc>https://ematth.dev/tags/</loc>
+    <lastmod>2023-05-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/note/2017/06/13/a-quick-note/</loc>
-    <lastmod>2017-06-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/post/2016/02/14/a-plain-markdown-post/</loc>
-    <lastmod>2016-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/tags/blogdown/</loc>
-    <lastmod>2016-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/categories/hugo/</loc>
-    <lastmod>2016-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/tags/markdown/</loc>
-    <lastmod>2016-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/tags/mathjax/</loc>
-    <lastmod>2016-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/tags/pandoc/</loc>
-    <lastmod>2016-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/post/</loc>
-    <lastmod>2016-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/tags/rstudio/</loc>
-    <lastmod>2016-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/post/2015/07/23/lorem-ipsum/</loc>
+    <loc>https://ematth.dev/note/</loc>
     <lastmod>2015-07-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/about/</loc>
+    <loc>https://ematth.dev/note/2015/07/23/lorem-ipsum/</loc>
+    <lastmod>2015-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ematth.dev/about/</loc>
+  </url><url>
+    <loc>https://ematth.dev/proj/</loc>
   </url>
 </urlset>
