@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Evan Matthews</title>
+    <link>https://ematth.dev/about/</link>
+    <description>Recent content in About on Evan Matthews</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ematth.dev/about/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
