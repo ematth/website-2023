@@ -17,10 +17,10 @@ menu:
       url: ""
       weight: 1
     - name: About
-      url: "about.md"
+      url: "about/"
       weight: 2
     - name: Projects
-      url: "projects.md"
+      url: "projects/"
       weight: 3
     - name: Blog
       url: "note/"
