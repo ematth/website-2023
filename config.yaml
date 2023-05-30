@@ -20,7 +20,7 @@ menu:
       url: "about/"
       weight: 2
     - name: Projects
-      url: "projects/"
+      url: "proj/"
       weight: 3
     - name: Blog
       url: "note/"
