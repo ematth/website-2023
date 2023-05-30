@@ -1,11 +1,11 @@
-baseurl: "https://example.com"
+baseurl: "https://ematth.dev"
 languageCode: "en-us"
-title: "A minimal Hugo website"
+title: "Evan Matthews"
 theme: "hugo-xmin"
 googleAnalytics: ""
 disqusShortname: ""
-ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
-footnotereturnlinkcontents: "↩"
+# ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+# footnotereturnlinkcontents: "↩"
 
 permalinks:
   note: "/note/:year/:month/:day/:slug/"
@@ -17,20 +17,29 @@ menu:
       url: ""
       weight: 1
     - name: About
-      url: "about/"
+      url: "about.md"
       weight: 2
-    - name: Categories
-      url: "categories/"
+    - name: Projects
+      url: "projects.md"
       weight: 3
-    - name: Tags
-      url: "tags/"
+    - name: Blog
+      url: "note/"
       weight: 4
+    - name: Articles
+      url: "post/"
+      weight: 5
+    # - name: Categories
+    #   url: "categories/"
+    #   weight: 3
+    # - name: Tags
+    #   url: "tags/"
+    #   weight: 4
     # - name: Subscribe
     #   url: "index.xml"
 
 params:
-  description: "A website built through Hugo and blogdown."
-  footer: "&copy; [Yihui Xie](https://yihui.org) 2017 -- {Year} | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
+  description: "Website created with Hugo and the XMin theme"
+  footer: "&copy; Evan M. Matthews {Year} | [Github](https://github.com/evanmm3)"
 
 markup:
   highlight:
