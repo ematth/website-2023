@@ -16,18 +16,18 @@ menu:
     - name: Home
       url: ""
       weight: 1
-    - name: About
-      url: "about/"
-      weight: 2
-    - name: Projects
-      url: "proj/"
-      weight: 3
-    - name: Blog
-      url: "note/"
-      weight: 4
-    - name: Articles
-      url: "post/"
-      weight: 5
+    # - name: About
+    #   url: "about/"
+    #   weight: 2
+    # - name: Projects
+    #   url: "proj/"
+    #   weight: 3
+    # - name: Blog
+    #   url: "note/"
+    #   weight: 4
+    # - name: Articles
+    #   url: "post/"
+    #   weight: 5
     # - name: Categories
     #   url: "categories/"
     #   weight: 3
