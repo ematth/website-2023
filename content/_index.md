@@ -16,4 +16,4 @@ All pages can be accessed from the menu at the top of the page. This is where yo
 
 <hr></hr>
 
-### Recent updates:
+### Recent Updates:

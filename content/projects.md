@@ -2,12 +2,24 @@
 title: Projects
 ---
 
+> **Note:**
+> Code for some projects on this list cannot be shared publicly because doing so would be a violation of UIUC's policies on [Academic Integrity.](https://provost.illinois.edu/policies/policies/academic-integrity/students-quick-reference-guide-to-academic-integrity/)
+
 # Personal Website
 
-- <b>Year:</b> Spring 2023
+- <b>Year:</b> May 2023
 - <b>Tools:</b> HTML, CSS, Markdown, Github Pages
 
     Built with [Hugo](https://gohugo.io/) and designed using the [XMIN](https://xmin.yihui.org/) theme. Read more about my journey through (<i>or around</i>) web development <i>very soon.</i>
+
+# Capstone: Transcribing Monophonic Audio with Deep-Learning Data
+
+- <b>Year:</b> Spring 2023
+- <b>Advisor:</b> Zuofu Cheng
+- <b>Tools:</b> MIDI/MusicXML, MuseScore, Python
+- <b>[Website](https://singsong.gatsbyjs.io/), [Presentation](/capstone.pdf)</b>
+
+    Combined senior capstone project with Kevin Zhou. Our main goal was to implement a machine-learning model for rudimentary conversion of raw audio recordings into readable sheet music. I created the database of examples to be recorded and handled the business side of the study, and Kevin put together the webapp [SingSong](https://singsong.gatsbyjs.io/) for collecting recording data.
 
 # Absentea
 - <b>Year:</b> Spring 2022
@@ -27,19 +39,18 @@ title: Projects
 
 # Disklavier Echo Effect
 - <b>Year:</b> Fall 2021 - Spring 2022
-- <b>Director:</b> Sever Tipei
+- <b>Director:</b> Heinrich Taube
+- <b>Tools:</b> Python, [rtmidi](https://pypi.org/project/python-rtmidi/), [musx](https://github.com/musx-admin/musx) 
 - <b>[Github](https://github.com/evanmm3/Disklavier-Echo-Effect)</b>
 
-    This is a course project for MUS 305 at the University of Illinois Champaign-Urbana, under the course direction of Dr. Heinrich Taube
-
-    This project aims to simulate an "echo" effect on a Yamaha Disklavier piano, on up to 16 key simulatenously, with repetitions and diminishing of echo sound up to the performer. The program runs using the musx library and uses threading to run real-time outputs to a Yamaha Disklavier.
+    "This is a course project for MUS 305 at the University of Illinois Champaign-Urbana, under the course direction of Dr. Heinrich Taube. This project aims to simulate an "echo" effect on a Yamaha Disklavier piano, on up to 16 key simulatenously, with repetitions and diminishing of echo sound up to the performer. The program runs using the musx library and uses threading to run real-time outputs to a Yamaha Disklavier."
 
 # Pan-Lang
 - <b>Year:</b> Spring 2020
 - <b>Collaborators:</b> Renzo Ledesma, Katie Saunders, Kevin Zhou
 - <b>[Website](https://pan-lang.github.io/), [Github](https://github.com/Pan-Lang/pan-lang.github.io), [Devpost](https://devpost.com/software/pan-lang)</b>
 
-    A food pantry webapp designed providing translated lists and descriptions to patrons of Champaign and Urbana-area foodbanks. Second prize winner of [PYGHACK 2020](https://pyghack2020.devpost.com/).
+    Second prize winner at [PYGHACK 2020](https://pyghack2020.devpost.com/): a food pantry webapp designed providing translated lists and descriptions to patrons of Champaign and Urbana-area foodbanks. 
 
 # Spotigraph
 - <b>Year:</b> Fall 2020
