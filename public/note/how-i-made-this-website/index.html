@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How I Made this Website | Evan Matthews</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/projects/">Projects</a></li>
+      
+      <li><a href="/note/">Blog</a></li>
+      
+      <li><a href="/post/">Articles</a></li>
+      
+      <li><a href="/resume.pdf">Resume</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">How I Made this Website</span></h1>
+<h2 class="author">Evan Matthews</h2>
+<h2 class="date">2023/06/01</h2>
+</div>
+
+<main>
+<blockquote>
+<p>⚠️ This article assumes you have a decent understanding about console commands and Git.</p>
+</blockquote>
+<h1 id="introduction">Introduction</h1>
+<p>I have something rather important to get off my chest:</p>
+<pre><code>I don't like web dev.
+</code></pre>
+<p>There, I said it. I've used plenty of tools in the past, including HTML, CSS and Javascript, yet the idea of making websites never truly stuck. To me, there was always an additional layer of complication that I could never get around. However, there are plenty of tools nowadays that get around the tedium of having to type an endless amount of style and formatting code to make a nice-looking website. This article will hopefully introduce you to a number of tools I've been using to make this website and will hopefully stop you from having to touch <i>javascript</i> 🤮 or do any actual web programming.</p>
+<hr>
+<h1 id="step-1-build-your-site">Step 1: Build your site</h1>
+<p>Considering that I only needed to create a static site, I ended up choosing <a href="https://gohugo.io/">Hugo</a> as it felt relatively intuitive to setup and included good documentation for customizing my site further. The instructions for starting your initial website can be found in their <a href="https://gohugo.io/getting-started/quick-start/">quick start guide</a>, but they can be summarized as such:</p>
+<ol>
+<li>
+<p>Install Hugo&rsquo;s extended edition <a href="https://gohugo.io/installation/">here</a>, and Git if you don&rsquo;t already have it.</p>
+</li>
+<li>
+<p>make an open a new directory wherever you want your website files stored locally, which can be done with</p>
+<pre><code class="language-bash">hugo new site &lt;site-folder&gt;
+cd &lt;site-folder&gt;
+</code></pre>
+</li>
+<li>
+<p>Initialize a new Git repository with</p>
+<pre><code> git init
+</code></pre>
+</li>
+<li>
+<p>Pick a theme (<i>pre-built CSS to forgo actual web-dev</i>) from the <a href="https://themes.gohugo.io/">Hugo Themes page</a>.</p>
+ <img src="webdev1.png" alt="Hugo theme Github page" width="600" height="300">
+<p>From that theme&rsquo;s Github page, fork your own copy of the theme (<i>this will be important later</i>), grab the forked repo&rsquo;s .git link and run this command:</p>
+<pre><code> git submodule add &lt;theme-link.git&gt; themes/&lt;theme-name&gt;
+</code></pre>
+<p>This adds your chosen theme as a <i>submodule</i> of your repository, and this will allow you to make changes to your theme&rsquo;s style code later on by commiting and pushing your theme changes to the forked repository:</p>
+<pre><code> cd themes/&lt;theme-name&gt;
+ git remote add origin &lt;theme-link.git&gt;
+</code></pre>
+<p>You can verify that this folder is within your themes directory by running <code>git remote -v</code>.</p>
+</li>
+<li>
+<p>Finally, make a <code>config.yaml</code> file in your website&rsquo;s root directory, and add the following lines:</p>
+<pre><code> baseurl: http://example.com
+ theme: &lt;theme-name&gt;
+</code></pre>
+<p>Make sure the <code>&lt;theme-name&gt;</code> is the same as your submodule, otherwise your theme won&rsquo;t be imported properly by Hugo. Additionally, remember this file for later since you&rsquo;ll want to change the <code>baseurl</code> at some point.</p>
+</li>
+</ol>
+<p>Once you&rsquo;ve completed these steps, you&rsquo;re ready to begin working on your site! I highly recommend copying all the contents of the <code>ExampleSite</code> folder over to your root directory, as this will provide you with a good template to play around with and understand the structure of your Hugo files. Additional information for customizing your site, such as the use of Hugo-specific variables and functions, can be found in their <a href="https://gohugo.io/documentation/">documentation</a> and are relatively intuitive once you start digging into an <code>ExampleSite</code>.</p>
+<p>Otherwise, you&rsquo;ll likely be your site files from scratch. This can be done by either creating a .md file from either an IDE or terminal using the following command:</p>
+<pre><code>(User/website/content:) hugo new &lt;page-name&gt;.md
+</code></pre>
+<blockquote>
+<p>Side note: markdown offers a number of tags for organizing or describing your pages. In particular, make sure <code>draft</code> is set to <strong>false</strong> when you&rsquo;re ready to publish your website, (otherwise your pages won&rsquo;t appear on the published site.)</p>
+</blockquote>
+<p>As you&rsquo;re making your website&rsquo;s pages, you&rsquo;ll likely want to check what the pages will look like in real-time. This can be done with:</p>
+<pre><code>(User/website:) hugo server
+</code></pre>
+<p>This command builds your pages and runs your website locally. Editing and re-saving files while your website is running locally allows you to see immediate changes to your pages.</p>
+<p>Lastly, once you have your first draft of your website ready to publish, you can run:</p>
+<pre><code>(User/website:) hugo
+</code></pre>
+<p>This command compiles all your Hugo files together under the <code>public/</code> folder into a series of HTML and CSS files for hosting and deployment to the world wide web.</p>
+<hr>
+<h1 id="step-2-host-and-deploy-your-site-files">Step 2: Host and deploy your site files</h1>
+<p>Congratulations! You&rsquo;ve hopefully built your website and gotten your site to successfully compile through <code>Hugo</code>. The next step is to <i>host</i> your files online so they can be accessed by the deployment tool, (<i>which sometimes is also the file hosting tool</i>). A number of services such as Squarespace and GoDaddy offer website building, hosting and deployment as one package for a monthly fee. However, most people (<i>including me</i>) are in the market for free or low-cost services, which is why I opted for <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#about-github-pages">Github Pages</a>. This is a service open to anyone with Github Free (<i>essentially everyone</i>) and allows you to host and deploy your site pages publicly. Here&rsquo;s how to do just that:</p>
+<ol>
+<li>
+<p><strong>Hosting</strong>: Make a new <strong>public</strong> repository from Github with the name <code>&lt;username&gt;.github.io</code>, and push your site repository:</p>
+<pre><code> (User/website:) git remote add origin https://github.com/&lt;username&gt;/&lt;username&gt;.github.io.get
+ git add .
+ git commit -m &quot;commit message&quot;
+ git push origin main
+</code></pre>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note #1:</strong>
+Pushing changes to your <username>.github.io repository will <strong>not</strong> include changes to the theme you chose. For that, you must do</p>
+<pre><code>  (User/website:) cd themes/&lt;theme-name&gt; 
+  (User/themes/&lt;theme-name&gt;:) git push origin main
+</code></pre>
+<p>where items in parentheses simply show where in your directory the commands take place. As you&rsquo;ve done <a href="">here</a>, this <code>git push</code> will update your forked repository with the changes you wanted deployed to the <i>theme</i> of your site.</p>
+</blockquote>
+<blockquote>
+<p><strong>Note #2:</strong> The above is not the only way to push your website code to Github, but regardless, your repository on Github <strong>must</strong> be named <code>&lt;username.github.io&gt;</code> in order for Github Pages to work.</p>
+</blockquote>
+<blockquote>
+<p><strong>Note #3:</strong> Did you remember to call</p>
+<pre><code>  (User/website:) hugo
+</code></pre>
+<p>before pushing your site code to Github?</p>
+</blockquote>
+<ol start="2">
+<li><strong>Deployment</strong>: Head over to <code>https://github.com/&lt;username&gt;/&lt;username&gt;.github.io/actions</code> and create a <strong>new workflow</strong>. You&rsquo;ll want to pick the <strong>static HTML</strong> preset, then while configuring the file:
+<ul>
+<li>
+<p>Remove all the existing code and paste <a href="ghaction.yaml">this file</a> which can also be found on Hugo&rsquo;s <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Host on Github tutorial</a>.</p>
+</li>
+<li>
+<p>Keep in mind that you may need to change <code>HUGO_VERSION</code> under <code>jobs/build/env</code> to <em>your</em> version of Hugo, which you can find by doing:</p>
+<pre><code>  hugo version
+</code></pre>
+<p>This will be of the form <code>#.###.#</code> for the purpose of the .yaml file.</p>
+</li>
+<li>
+<p>After creating the workflow, go to <code>https://github.com/&lt;username&gt;/&lt;username&gt;.github.io/settings/pages</code>. Under <strong>Build and Deployment</strong>, choose <code>Github Actions</code>, and manually select the workflow you just created if necessary.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>If you did this all correctly, you should find your website deployed at <code>https://&lt;username&gt;.github.io</code>. If you&rsquo;re happy with that domain, feel free to leave the tutorial and enjoy your new website! Otherwise, you&rsquo;ll likely want a more professional domain to go with your newly published site&hellip;</p>
+<h1 id="step-3-connecting-a-custom-domain">Step 3: Connecting a custom domain</h1>
+<p>Now that you&rsquo;ve built and hosted/deployed your website, it&rsquo;s time to change the domain! Ideally, you&rsquo;ll want something short and simple so that it&rsquo;s easily memorizable (<em>and potentially recognizable</em>), like one of these examples:</p>
+<ul>
+<li><code>evanm.com</code></li>
+<li><code>evan-matthews.org</code></li>
+<li><code>funnyhat.net</code></li>
+<li><del><code>ematth.dev</code></del> <em>Sorry, this one&rsquo;s already taken!</em> 😉</li>
+</ul>
+<p>There are plenty of services for purchasing a custom domain. For my purposes, I used <a href="https://godaddy.com">godaddy.com</a> which also included tools for creating and hosting my website if I felt so inclined.</p>
+<p>For the remainder of this tutorial, Github&rsquo;s <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site">documentation on custom domains</a> will be a very helpful resource. The steps will be:</p>
+<ol>
+<li>
+<p>Wherever you choose to purchase your custom domain, head to your <code>DNS Records/Settings</code>, and add the following records:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Name</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>185.199.108.153</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>185.199.109.153</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>185.199.110.153</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>185.199.111.153</td>
+</tr>
+<tr>
+<td>CNAME</td>
+<td>www</td>
+<td><code>&lt;username&gt;.github.io</code></td>
+</tr>
+</tbody>
+</table>
+ <img src="dnsgh.png" alt="DNS Type A records" width=800 height=300>
+ <img src="dnscname.png" alt="DNS Type A records" width=800 height=70>
+<p>The first four are the IP addresses that your custom domain&rsquo;s DNS will use to connect directly with Github Pages to make use of your fancy new domain name. The last one is the CNAME which establishes the redirect (<em>on the side of your domain&rsquo;s DNS</em>) from your website&rsquo;s current domain to your new domain.</p>
+</li>
+<li>
+<p>In your website&rsquo;s Github repository, go to <code>Settings -&gt; Pages</code>, and under <code>Custom Domain</code>, add your domain and click save. This might take some time to set up on Github&rsquo;s end, but once done, your site should be available under your custom domain!</p>
+</li>
+</ol>
+<h1 id="conclusion">Conclusion</h1>
+<img src="homepage.png" width= 800 height= 600>
+<p><strong>Congratulations on your setting up your new website!</strong> with everything provided, you now have the tools and expertise to assemble a website without the use of any advanced web development skills on your end. All you&rsquo;ll need is Markdown and some snippets of HTML for embedding! Additionally, if you&rsquo;re ever feeling adventurous, Hugo offers means for connecting more advanced tools like Javascript applications and other embeds.</p>
+
+</main>
+
+  <footer>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+  
+  <hr/>
+  © Evan Matthews 2023 | <a href="https://github.com/evanmm3">Github</a>
+  
+  </footer>
+  </body>
+</html>
+
