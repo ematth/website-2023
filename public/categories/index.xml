@@ -16,14 +16,5 @@
       <description></description>
     </item>
     
-    <item>
-      <title>Example</title>
-      <link>https://ematth.dev/categories/example/</link>
-      <pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ematth.dev/categories/example/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

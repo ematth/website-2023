@@ -1,6 +1,9 @@
 ---
 title: About
 ---
+<br>
+
+<img src="/img/aboutpic.JPG" alt="Picture of Evan Matthews" width=800 height=550>
 
 **Evan Matthews** is a computer science graduate student at the University of Illinois Urbana-Champaign. His research focuses primarily on audio computing and AI/ML.
 

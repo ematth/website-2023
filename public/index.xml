@@ -19,25 +19,6 @@ I don&#39;t like web dev. There, I said it. I&#39;ve used plenty of tools in the
     </item>
     
     <item>
-      <title>Example Page</title>
-      <link>https://ematth.dev/post/2023/05/29/example-page/</link>
-      <pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ematth.dev/post/2023/05/29/example-page/</guid>
-      <description>Weird, there&amp;rsquo;s nothing on this page.. yet!</description>
-    </item>
-    
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>https://ematth.dev/note/lorem-ipsum/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://ematth.dev/note/lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Quisque mattis volutpat lorem vitae feugiat.</description>
-    </item>
-    
-    <item>
       <title>About</title>
       <link>https://ematth.dev/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

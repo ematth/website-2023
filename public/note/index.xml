@@ -18,15 +18,5 @@ Introduction I have something rather important to get off my chest:
 I don&#39;t like web dev. There, I said it. I&#39;ve used plenty of tools in the past, including HTML, CSS and Javascript, yet the idea of making websites never truly stuck. To me, there was always an additional layer of complication that I could never get around.</description>
     </item>
     
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>https://ematth.dev/note/lorem-ipsum/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://ematth.dev/note/lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Quisque mattis volutpat lorem vitae feugiat.</description>
-    </item>
-    
   </channel>
 </rss>
