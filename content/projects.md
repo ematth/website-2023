@@ -10,7 +10,7 @@ title: Projects
 - <b>Year:</b> May 2023
 - <b>Tools:</b> HTML, CSS, Markdown, Github Pages
 
-    Built with [Hugo](https://gohugo.io/) and designed using the [XMIN](https://xmin.yihui.org/) theme. Read more about my journey through (<i>or around</i>) web development <i>very soon.</i>
+    Built with [Hugo](https://gohugo.io/) and designed using the [XMIN](https://xmin.yihui.org/) theme. Read more about my journey through (<i>or around</i>) web development [here](/note/how-i-made-this-website/).
 
 # Capstone: Transcribing Monophonic Audio with Deep-Learning Data
 

@@ -148,6 +148,6 @@ For the remainder of this tutorial, Github's [documentation on custom domains](h
 
 # Conclusion
 
-<img src="homepage.png" width= 800 height= 600>
+<img src="homepage.png" style="border:5px solid #dddddd; padding:3px" width=800 height=600>
 
 **Congratulations on your setting up your new website!** with everything provided, you now have the tools and expertise to assemble a website without the use of any advanced web development skills on your end. All you'll need is Markdown and some snippets of HTML for embedding! Additionally, if you're ever feeling adventurous, Hugo offers means for connecting more advanced tools like Javascript applications and other embeds. 
