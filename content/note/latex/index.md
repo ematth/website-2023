@@ -93,6 +93,8 @@ $$E[X] = \sum_x P(X = x)\cdot x$$
 
 I'll add some typed-out examples here very soon 😉
 
+<hr>
+
 # References
 
 - Britannica, The Editors of Encyclopaedia. "LaTeX". Encyclopedia Britannica, 17 Mar. 2023, https://www.britannica.com/technology/LaTeX-computer-programming-language.
