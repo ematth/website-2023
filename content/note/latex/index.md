@@ -59,7 +59,15 @@ Here's all the $\LaTeX$ symbols you'll need start writing expressions:
 
 > Note: backslash (\\) is often used as an "escape character" in some tools, meaning that some **programs won't be able to render single backslashes.** To circumvent this, you may need to type single backslashes as '\\' and double backslashes as `\\\\`, which will allow it to render as \\\\ for `\begin-\end` formatting.
 
+# Easy to learn, hard to master
 
+Much like programming, note-taking in LaTeX can seem pretty difficult at first. The number of specific keywords to memorize combined with unique symbols and parentheses/bracket-grouping makes it difficult to type rather quickly. I discovered this very quickly when I found myself keeping multiple LaTeX cheat-sheet tabs open while I typed my notes. And while I can say that I still don't know all the Greek letters by memory, I believe that forcing myself to type LaTeX in realtime helped both my typing accuracy and my ability to take worth-while notes. 
+
+    $$P(A\mid B) = \frac{P(B \mid A)\cdot P(A)}{P(B)}$$
+
+    $$E[X] = \sum_x P(X = x)\cdot x$$
+
+Some text goes here
 
 <br></br>
 <hr>
