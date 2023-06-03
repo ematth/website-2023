@@ -14,7 +14,7 @@ draft: false
 
 LaTeX, pronounced "lah-tech" or "lay-tech", is a typesetting system based on the TeX language. It was developed in 1985 by American computer scientist Leslie Lamport, who wrote the package due to his frequent use of shortcuts for mathematical and scientific symbols in his own writing. Since then, it has become a staple in the world of academia as one of the premier document-writing tools with numerous integrations and extensions to the LaTeX package.
 
-In this blog, **I'd like to introduce LaTeX as a useful tool for anyone looking improve their notes.** I first got into taking my notes in LaTeX back in my sophomore year of undergrad when a friend recommended I use [Notion](https://www.notion.so/) for organizing my schedule and college coursework. Since then, I've taken notes on everything from MATH 257: Linear Algebra with Computational Applications, to CS 374: Introduction to Algorithms & Models of Computation, and everything in between. This page should hopefully serve as a good learning resource and review of common and useful expressions.   
+In this blog, **I'd like to introduce LaTeX as a useful tool for anyone looking improve their notes.** I first got into taking my notes in LaTeX back in my sophomore year of undergrad when a friend recommended I use [Notion](https://www.notion.so/) for organizing my schedule and college coursework. Since then, I've taken notes on everything from MATH 257: Linear Algebra with Computational Applications, to CS 374: Introduction to Algorithms & Models of Computation, and everything in between. This page should hopefully serve as a introductory resource to the language.
 
 <hr>
 
@@ -81,13 +81,17 @@ There are several ways to start writing and exporting documents with LaTeX:
 
 # Easy to learn, hard to master
 
-Much like programming, note-taking in LaTeX can seem pretty difficult at first. The number of specific keywords to memorize combined with unique symbols and parentheses/bracket-grouping makes it difficult to type rather quickly. I discovered this very quickly when I found myself keeping multiple LaTeX cheat-sheet tabs open while I typed my notes. And while I can say that I still don't know all the Greek letters by memory, I believe that forcing myself to type LaTeX in realtime helped both my typing accuracy and my ability to take worth-while notes. 
+Much like programming, note-taking in LaTeX can seem pretty difficult at first. The number of specific keywords to memorize combined with unique symbols and parentheses/bracket-grouping makes it difficult to type rather quickly. I discovered this very quickly when I found myself keeping multiple LaTeX cheat-sheet tabs open while I typed my notes. And while I can say that I still don't know all the Greek letters by memory, I believe that forcing myself to type LaTeX in realtime helped both my typing accuracy and my ability to take worthwhile notes. 
 
 $$P(A\mid B) = \frac{P(B \mid A)\cdot P(A)}{P(B)}$$
 
 $$E[X] = \sum_x P(X = x)\cdot x$$
 
 <hr>
+
+# Examples
+
+I'll add some typed-out examples here very soon 😉
 
 # References
 
