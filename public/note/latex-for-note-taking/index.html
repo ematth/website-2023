@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LaTeX for Note-Taking | Evan Matthews</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/projects/">Projects</a></li>
+      
+      <li><a href="/note/">Blog</a></li>
+      
+      <li><a href="/post/">Articles</a></li>
+      
+      <li><a href="/resume.pdf">Resume</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">LaTeX for Note-Taking</span></h1>
+<h2 class="author">Evan Matthews</h2>
+<h2 class="date">2023/06/03</h2>
+</div>
+
+<main>
+<h1 id="latex">$\LaTeX$</h1>
+<p>LaTeX, pronounced &ldquo;lah-tech&rdquo; or &ldquo;lay-tech&rdquo;, is a typesetting system based on the TeX language. It was developed in 1985 by American computer scientist Leslie Lamport, who wrote the package due to his frequent use of shortcuts for mathematical and scientific symbols in his own writing. Since then, it has become a staple in the world of academia as one of the premier document-writing tools with numerous integrations and extensions to the LaTeX package.</p>
+<p>In this blog, <strong>I&rsquo;d like to introduce LaTeX as a useful tool for anyone looking improve their notes.</strong> I first got into taking my notes in LaTeX back in my sophomore year of undergrad when a friend recommended I use <a href="https://www.notion.so/">Notion</a> for organizing my schedule and college coursework. Since then, I&rsquo;ve taken notes on everything from MATH 257: Linear Algebra with Computational Applications, to CS 374: Introduction to Algorithms &amp; Models of Computation, and everything in between. This page should hopefully serve as a good learning resource and review of common and useful expressions.</p>
+<hr>
+<h1 id="the-basics">The Basics</h1>
+<p>Here&rsquo;s all the LaTeX symbols you&rsquo;ll need start writing expressions:</p>
+<ul>
+<li>
+<p><code>$ expressions $</code> -&gt; wrapped in <strong>single dollar-signs</strong> for &ldquo;inline&rdquo; math mode. These can be written alongside normal lines of text $\text{like this: f(x) = mx + b }$, then return to normal text.</p>
+</li>
+<li>
+<p><code>$$ expressions $$</code> -&gt; <strong>double dollar-signs</strong> for &ldquo;display&rdquo; math mode, making them stand out as something important with respect to the document&rsquo;s material:</p>
+<p>$$\int_{0}^{5} x^2 dx \ne 10&hellip;\quad \int_{0}^{5} x^2 dx = \frac{x^3}{3}\Biggr|_0^5 = \frac{(125)}{3} - \frac{(0)}{3} = \frac{125}{3} = 41.\bar{6} \approx 41.6667$$</p>
+<blockquote>
+<p>Note: while <strong>$$</strong> notation is still the go-to for display math mode, a number of tools, including the TeX editor and Overleaf, now recommend using <strong><code>[\ ... \]</code></strong> as delimiters. This is the standard set by LaTeX itself, while the use of dollar signs and double dollar signs remains a standard set by TeX.</p>
+</blockquote>
+</li>
+<li>
+<p><code>\keyword</code> -&gt; the <strong>backslash</strong> (<code>\</code>) is used to indicate keywords in the LaTeX package.</p>
+<ul>
+<li><code>&quot;\alpha, \beta, \gamma, \delta...&quot;</code> -&gt;  $ &ldquo;\alpha, \beta, \gamma, \delta&hellip;&quot;$</li>
+</ul>
+</li>
+<li>
+<p><code>\bar{(36 + b)}</code> -&gt; <strong>curly brackets</strong> (<code>{}</code>) are used to indicate grouping for expressions.</p>
+<ul>
+<li>
+<p><code>\overline(36+b)</code> -&gt; $\overline(36+b)$ ❌</p>
+</li>
+<li>
+<p><code>\overline{(36+b)}</code> -&gt; $\overline{(36+b)}$ ✅</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>x_{1}, y^{2}</code> -&gt; the <strong>underscore</strong> (<code>_</code>) and <strong>caret</strong> (<code>^</code>) are used to indicate subscript (<em>slightly below</em>) and superscript (<em>slightly above</em>), respectively. Some expressions, like <code>\frac</code> (<em>fraction</em>) and <code>\int</code> (<em>integral</em>), use these characters to indicate what is placed above and below the expression.</p>
+<ul>
+<li>
+<p><code>x_{1}, y^{2}</code> -&gt; $x_{1},\space y^{2}$</p>
+</li>
+<li>
+<p><code>\frac{A}{B} + 5, \int_{A}^{B} c + 3 dc</code> -&gt; $\frac{A}{B} + 5,\quad \int_{A}^{B} c + 3 \space dc$</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>\begin{keyword} ... \end{keyword}</code> -&gt; there are a number of keywords used by <strong><code>\begin</code></strong> for aligning or formatting expressions within your document. In these types of expressions, <strong>ampersand</strong> (<code>&amp;</code>) splits expressions by column, and <strong>double-backslash</strong> (<code>\\</code>) splits expression by row. There&rsquo;s a lot you can do with this, especially if you&rsquo;re working with matrices.</p>
+<ul>
+<li><code>\begin{bmatrix}  1 &amp; 2 &amp; 3 \\ a &amp; b &amp; c \end{bmatrix}</code> -&gt;
+$\begin{bmatrix}
+1 &amp; 2 &amp; 3 \\
+a &amp; b &amp; c
+\end{bmatrix}$</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Note: backslash (\) is often used as an &ldquo;escape character&rdquo; in some tools, meaning that some <strong>programs won&rsquo;t be able to render single backslashes.</strong> To circumvent this, you may need to type single backslashes as &lsquo;\&rsquo; and double backslashes as <code>\\\\</code>, which will allow it to render as \\ for <code>\begin-\end</code> formatting.</p>
+</blockquote>
+<hr>
+<h1 id="where-can-i-start-using-latex">Where can I start using LaTeX?</h1>
+<p>There are several ways to start writing and exporting documents with LaTeX:</p>
+<img src="markdown.png" style="max-width:10%;min-width:40px;float:right;" alt="Markdown logo" />
+<ul>
+<li><strong>The easiest way to start:</strong> Markdown documents support the use of embedded graphics and LaTeX formulas. Just open a new .md file on your <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">IDE</a> of your choosing, and starting typing!</li>
+</ul>
+<img src="notion.png" style="max-width:10%;min-width:30px;float:right;" alt="Overleaf logo" />
+<ul>
+<li><strong>Another easier way:</strong> As I&rsquo;ve mentioned earlier, <a href="https://www.notion.so">Notion</a> is a fantastic free organizational webapp with support for Markdown and LaTeX. If you&rsquo;re already used to typing your notes and are in the need for an organizational tool, then Notion will feel right at home.</li>
+</ul>
+<img src="overleaf.png" style="max-width:10%;min-width:30px;float:right;" alt="Overleaf logo" />
+<ul>
+<li><strong>Less easier, but more robust ways:</strong> I may have lied to you about how much formatting LaTeX can actually encompass. However, my methodology has reasoning: LaTeX/TeX are capable of organizing and formatting entire pages and finer details such as document types, metadata, titles, headers and footers, along with what I&rsquo;ve already described. If you&rsquo;re digging into more complex uses of LaTeX or writing scientific/academic papers, then TeX editors such as <a href="https://www.overleaf.com/">Overleaf</a>, <a href="https://pages.uoregon.edu/koch/texshop/">TeXshop</a> and <a href="https://www.texstudio.org/">TeXstudio</a> might better suit your needs. I chose not to discuss the document-related functionality as to not scare anyone away from using LaTeX.</li>
+</ul>
+<hr>
+<h1 id="easy-to-learn-hard-to-master">Easy to learn, hard to master</h1>
+<p>Much like programming, note-taking in LaTeX can seem pretty difficult at first. The number of specific keywords to memorize combined with unique symbols and parentheses/bracket-grouping makes it difficult to type rather quickly. I discovered this very quickly when I found myself keeping multiple LaTeX cheat-sheet tabs open while I typed my notes. And while I can say that I still don&rsquo;t know all the Greek letters by memory, I believe that forcing myself to type LaTeX in realtime helped both my typing accuracy and my ability to take worth-while notes.</p>
+<p>$$P(A\mid B) = \frac{P(B \mid A)\cdot P(A)}{P(B)}$$</p>
+<p>$$E[X] = \sum_x P(X = x)\cdot x$$</p>
+<hr>
+<h1 id="references">References</h1>
+<ul>
+<li>
+<p>Britannica, The Editors of Encyclopaedia. &ldquo;LaTeX&rdquo;. Encyclopedia Britannica, 17 Mar. 2023, <a href="https://www.britannica.com/technology/LaTeX-computer-programming-language">https://www.britannica.com/technology/LaTeX-computer-programming-language</a>.</p>
+</li>
+<li>
+<p>Overleaf, the Online LaTeX Editor. “Learn LaTeX in 30 Minutes - Overleaf, Online LaTeX Editor.” Overleaf.com, 2014, <a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes">www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes</a>.</p>
+</li>
+</ul>
+<p>‌</p>
+
+</main>
+
+  <footer>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+  
+  <hr/>
+  © Evan Matthews 2023 | <a href="https://github.com/evanmm3">Github</a>
+  
+  </footer>
+  </body>
+</html>
+

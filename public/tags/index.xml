@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Evan Matthews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>latex</title>
+      <link>https://ematth.dev/tags/latex/</link>
+      <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ematth.dev/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>https://ematth.dev/tags/markdown/</link>
+      <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ematth.dev/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>css</title>
       <link>https://ematth.dev/tags/css/</link>
@@ -22,15 +40,6 @@
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://ematth.dev/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>markdown</title>
-      <link>https://ematth.dev/tags/markdown/</link>
-      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ematth.dev/tags/markdown/</guid>
       <description></description>
     </item>
     

@@ -6,7 +6,16 @@
     <description>Recent content in Home on Evan Matthews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LaTeX for Note-Taking</title>
+      <link>https://ematth.dev/note/latex-for-note-taking/</link>
+      <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ematth.dev/note/latex-for-note-taking/</guid>
+      <description>$\LaTeX$ LaTeX, pronounced &amp;ldquo;lah-tech&amp;rdquo; or &amp;ldquo;lay-tech&amp;rdquo;, is a typesetting system based on the TeX language. It was developed in 1985 by American computer scientist Leslie Lamport, who wrote the package due to his frequent use of shortcuts for mathematical and scientific symbols in his own writing. Since then, it has become a staple in the world of academia as one of the premier document-writing tools with numerous integrations and extensions to the LaTeX package.</description>
+    </item>
+    
     <item>
       <title>How I Made this Website</title>
       <link>https://ematth.dev/note/how-i-made-this-website/</link>
