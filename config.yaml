@@ -3,7 +3,7 @@ languageCode: "en-us"
 title: "Evan Matthews"
 theme: "hugo-xmin"
 googleAnalytics: ""
-disqusShortname: ""
+disqusShortname: "ematth"
 
 permalinks:
   note: "/note/:slug/"
@@ -23,7 +23,7 @@ menu:
     - name: Blog
       url: "note/"
       weight: 4
-    - name: Articles
+    - name: Audio Processing
       url: "post/"
       weight: 5
     - name: Resume

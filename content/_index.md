@@ -1,6 +1,7 @@
 ---
 title: Home
 math: true
+disable_comments: true
 ---
 
 
@@ -10,9 +11,9 @@ math: true
 
 ## $$\frac{1}{n}\sum_{i=0}^{n} (y_i - (mx_i + c))^2$$
 
-<i>Welcome to my website!</i> As you can see, it's currently in the works, as there's practically nothing here.<br> That is expected to change soon.
+<i>**Welcome to my website!**</i>
 
-All pages can be accessed from the menu at the top of the page. This is where you can access my [personal blog](/note/) where you can read my fun subjective posts on various topics. For more educational posts, check out [articles](/post/) where I hope to summarize topics related to music, programming, audio computing, and mathematics in an easily-digestible format.
+All pages can be accessed from the menu in the website's header. This is where you can access my [personal blog](/note/), where you can read my fun educational posts on various topics. For detailed explanations about my academic field, check out [Audio Processing](/post/), where I will write tutorials on audio coding and processing in an easily-digestible format.
 
 <hr></hr>
 

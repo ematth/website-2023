@@ -1,5 +1,6 @@
 ---
 title: Projects
+disable_comments: true
 ---
 
 > **Note:**

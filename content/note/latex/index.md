@@ -101,4 +101,6 @@ I'll add some typed-out examples here very soon 😉
 
 - Overleaf, the Online LaTeX Editor. “Learn LaTeX in 30 Minutes - Overleaf, Online LaTeX Editor.” Overleaf.com, 2014, www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes.
 
+<hr>
+
 ‌

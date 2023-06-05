@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Evan Matthews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Updates</title>
+      <link>https://ematth.dev/categories/updates/</link>
+      <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ematth.dev/categories/updates/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Coding</title>
       <link>https://ematth.dev/categories/coding/</link>

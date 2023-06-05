@@ -21,7 +21,7 @@
       
       <li><a href="/note/">Blog</a></li>
       
-      <li><a href="/post/">Articles</a></li>
+      <li><a href="/post/">Audio Processing</a></li>
       
       <li><a href="/resume.pdf">Resume</a></li>
       
@@ -210,7 +210,31 @@ Pushing changes to your <username>.github.io repository will <strong>not</strong
 </main>
 
   <footer>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+  
+<section id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_config = function () {
+    
+    };
+    (function() {
+      var inIFrame = function() {
+        var iframe = true;
+        try { iframe = window.self !== window.top; } catch (e) {}
+        return iframe;
+      };
+      if (inIFrame()) return;
+      var d = document, s = d.createElement('script');
+      s.src = '//ematth.disqus.com/embed.js'; s.async = true;
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </section>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
 
 
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"></script>

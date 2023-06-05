@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Updates on Evan Matthews</title>
+    <link>https://ematth.dev/categories/updates/</link>
+    <description>Recent content in Updates on Evan Matthews</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/categories/updates/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Update: Comments &amp; Future Articles</title>
+      <link>https://ematth.dev/note/update-comments-future-articles/</link>
+      <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ematth.dev/note/update-comments-future-articles/</guid>
+      <description>💡 You can read the bolded sections of this post to get the TL;DR.
+Hey everyone,
+I&amp;rsquo;m proud to announce that my blog posts now have comments! You can use this section to leave feedback, continue topic discussions or suggest edits. I only ask that everyone be kind and courteous to each other, (please don&amp;rsquo;t force me to moderate negative/toxic comments or remove commenting entirely).
+Additionally, I&amp;rsquo;ve replaced the previous &amp;ldquo;Articles&amp;rdquo; tab with &amp;ldquo;Audio Processing&amp;rdquo; as I&amp;rsquo;m starting to make audio processing tutorials.</description>
+    </item>
+    
+  </channel>
+</rss>

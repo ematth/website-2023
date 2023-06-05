@@ -3,15 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ematth.dev/note/</loc>
-    <lastmod>2023-06-03T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ematth.dev/categories/</loc>
-    <lastmod>2023-06-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ematth.dev/categories/coding/</loc>
-    <lastmod>2023-06-03T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ematth.dev/</loc>
+    <lastmod>2023-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ematth.dev/note/update-comments-future-articles/</loc>
+    <lastmod>2023-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ematth.dev/categories/updates/</loc>
+    <lastmod>2023-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ematth.dev/categories/coding/</loc>
     <lastmod>2023-06-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ematth.dev/tags/latex/</loc>

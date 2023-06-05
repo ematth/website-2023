@@ -1,5 +1,6 @@
 ---
 title: About
+disable_comments: true
 ---
 <br>
 

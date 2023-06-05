@@ -21,7 +21,7 @@
       
       <li><a href="/note/">Blog</a></li>
       
-      <li><a href="/post/">Articles</a></li>
+      <li><a href="/post/">Audio Processing</a></li>
       
       <li><a href="/resume.pdf">Resume</a></li>
       
@@ -38,7 +38,7 @@
 <main>
 <h1 id="latex">$\LaTeX$</h1>
 <p>LaTeX, pronounced &ldquo;lah-tech&rdquo; or &ldquo;lay-tech&rdquo;, is a typesetting system based on the TeX language. It was developed in 1985 by American computer scientist Leslie Lamport, who wrote the package due to his frequent use of shortcuts for mathematical and scientific symbols in his own writing. Since then, it has become a staple in the world of academia as one of the premier document-writing tools with numerous integrations and extensions to the LaTeX package.</p>
-<p>In this blog, <strong>I&rsquo;d like to introduce LaTeX as a useful tool for anyone looking improve their notes.</strong> I first got into taking my notes in LaTeX back in my sophomore year of undergrad when a friend recommended I use <a href="https://www.notion.so/">Notion</a> for organizing my schedule and college coursework. Since then, I&rsquo;ve taken notes on everything from MATH 257: Linear Algebra with Computational Applications, to CS 374: Introduction to Algorithms &amp; Models of Computation, and everything in between. This page should hopefully serve as a good learning resource and review of common and useful expressions.</p>
+<p>In this blog, <strong>I&rsquo;d like to introduce LaTeX as a useful tool for anyone looking improve their notes.</strong> I first got into taking my notes in LaTeX back in my sophomore year of undergrad when a friend recommended I use <a href="https://www.notion.so/">Notion</a> for organizing my schedule and college coursework. Since then, I&rsquo;ve taken notes on everything from MATH 257: Linear Algebra with Computational Applications, to CS 374: Introduction to Algorithms &amp; Models of Computation, and everything in between. This page should hopefully serve as a introductory resource to the language.</p>
 <hr>
 <h1 id="the-basics">The Basics</h1>
 <p>Here&rsquo;s all the LaTeX symbols you&rsquo;ll need start writing expressions:</p>
@@ -112,9 +112,12 @@ a &amp; b &amp; c
 </ul>
 <hr>
 <h1 id="easy-to-learn-hard-to-master">Easy to learn, hard to master</h1>
-<p>Much like programming, note-taking in LaTeX can seem pretty difficult at first. The number of specific keywords to memorize combined with unique symbols and parentheses/bracket-grouping makes it difficult to type rather quickly. I discovered this very quickly when I found myself keeping multiple LaTeX cheat-sheet tabs open while I typed my notes. And while I can say that I still don&rsquo;t know all the Greek letters by memory, I believe that forcing myself to type LaTeX in realtime helped both my typing accuracy and my ability to take worth-while notes.</p>
+<p>Much like programming, note-taking in LaTeX can seem pretty difficult at first. The number of specific keywords to memorize combined with unique symbols and parentheses/bracket-grouping makes it difficult to type rather quickly. I discovered this very quickly when I found myself keeping multiple LaTeX cheat-sheet tabs open while I typed my notes. And while I can say that I still don&rsquo;t know all the Greek letters by memory, I believe that forcing myself to type LaTeX in realtime helped both my typing accuracy and my ability to take worthwhile notes.</p>
 <p>$$P(A\mid B) = \frac{P(B \mid A)\cdot P(A)}{P(B)}$$</p>
 <p>$$E[X] = \sum_x P(X = x)\cdot x$$</p>
+<hr>
+<h1 id="examples">Examples</h1>
+<p>I&rsquo;ll add some typed-out examples here very soon 😉</p>
 <hr>
 <h1 id="references">References</h1>
 <ul>
@@ -125,12 +128,37 @@ a &amp; b &amp; c
 <p>Overleaf, the Online LaTeX Editor. “Learn LaTeX in 30 Minutes - Overleaf, Online LaTeX Editor.” Overleaf.com, 2014, <a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes">www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes</a>.</p>
 </li>
 </ul>
+<hr>
 <p>‌</p>
 
 </main>
 
   <footer>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+  
+<section id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_config = function () {
+    
+    };
+    (function() {
+      var inIFrame = function() {
+        var iframe = true;
+        try { iframe = window.self !== window.top; } catch (e) {}
+        return iframe;
+      };
+      if (inIFrame()) return;
+      var d = document, s = d.createElement('script');
+      s.src = '//ematth.disqus.com/embed.js'; s.async = true;
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </section>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
 
 
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"></script>
