@@ -32,7 +32,16 @@
     <loc>https://ematth.dev/tags/</loc>
     <lastmod>2023-06-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://ematth.dev/categories/audio-processing/</loc>
+    <lastmod>2023-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ematth.dev/post/</loc>
+    <lastmod>2023-06-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://ematth.dev/tags/css/</loc>
+    <lastmod>2023-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ematth.dev/post/2023/06/01/dsp-basics/</loc>
     <lastmod>2023-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ematth.dev/note/how-i-made-this-website/</loc>
@@ -41,9 +50,10 @@
     <loc>https://ematth.dev/tags/html/</loc>
     <lastmod>2023-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ematth.dev/about/</loc>
+    <loc>https://ematth.dev/tags/python/</loc>
+    <lastmod>2023-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ematth.dev/post/</loc>
+    <loc>https://ematth.dev/about/</loc>
   </url><url>
     <loc>https://ematth.dev/projects/</loc>
   </url>

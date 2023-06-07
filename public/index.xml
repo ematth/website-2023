@@ -29,6 +29,19 @@ Additionally, I&amp;rsquo;ve replaced the previous &amp;ldquo;Articles&amp;rdquo
     </item>
     
     <item>
+      <title>DSP Basics</title>
+      <link>https://ematth.dev/post/2023/06/01/dsp-basics/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ematth.dev/post/2023/06/01/dsp-basics/</guid>
+      <description>Introduction Words words words words
+Waveform We&amp;rsquo;ll define all sounds imported and exported as waveforms, or arrays of integer or floating-point values that designate the amplitude of a sound for each frame of sound. A single frame of a waveform won&amp;rsquo;t sound like much, (or anything at all), but when a number of frames are played sequentially, our ears can process the information.
+References Words
+Words
+Words</description>
+    </item>
+    
+    <item>
       <title>How I Made this Website</title>
       <link>https://ematth.dev/note/how-i-made-this-website/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>

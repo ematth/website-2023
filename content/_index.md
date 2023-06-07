@@ -15,6 +15,12 @@ disable_comments: true
 
 All pages can be accessed from the menu in the website's header. This is where you can access my [personal blog](/note/), where you can read my fun educational posts on various topics. For detailed explanations about my academic field, check out [Audio Processing](/post/), where I will write tutorials on audio coding and processing in an easily-digestible format.
 
-<hr></hr>
+<hr>
+<div class="container">
+    <py-script src="indexcode.py" std-out="output">
+    </py-script>
+</div>
 
 ### Recent Updates:
+
+<div id="output"></div>

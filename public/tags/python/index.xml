@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Evan Matthews</title>
+    <link>https://ematth.dev/tags/python/</link>
+    <description>Recent content in Python on Evan Matthews</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSP Basics</title>
+      <link>https://ematth.dev/post/2023/06/01/dsp-basics/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ematth.dev/post/2023/06/01/dsp-basics/</guid>
+      <description>Introduction Words words words words
+Waveform We&amp;rsquo;ll define all sounds imported and exported as waveforms, or arrays of integer or floating-point values that designate the amplitude of a sound for each frame of sound. A single frame of a waveform won&amp;rsquo;t sound like much, (or anything at all), but when a number of frames are played sequentially, our ears can process the information.
+References Words
+Words
+Words</description>
+    </item>
+    
+  </channel>
+</rss>
