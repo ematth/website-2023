@@ -41,7 +41,7 @@ def spectrogram(plot, sample, sr, title="Spectrogram", xLabel="Time (seconds)", 
 
 sr1, sample1 = wavread('./reunion.wav');
 sample1 = sample1[:int(len(sample1)/4)]
-figure, axs = plt.subplots(1,2); figure.set_size_inches(18, 8); figure.suptitle("Stayin' Alive")
+figure, axs = plt.subplots(1,2); figure.set_size_inches(18, 8); figure.suptitle("Chopin Op.28 No. 1 \"Reunion\"")
 axs[0].plot(sample1); axs[0].set_title("Waveform")
 a = spectrogram(axs[1], sample1, sr1)
 display(figure, target="plot"); 

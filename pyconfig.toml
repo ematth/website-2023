@@ -1,0 +1,6 @@
+packages = ["scipy", "numpy", "matplotlib"]
+terminal = false
+autoclose_loader = true
+[splashscreen]
+enabled = false
+autoclose = true
