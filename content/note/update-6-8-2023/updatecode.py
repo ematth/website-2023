@@ -39,7 +39,9 @@ def spectrogram(plot, sample, sr, title="Spectrogram", xLabel="Time (seconds)", 
     return plot
 
 
-sr1, sample1 = wavread('reunion.wav');
-figure, axs = plt.subplots(1,2); figure.set_size_inches(18, 8)
-axs[0, 0].plot(sample1); axs[0, 0].set_title('Sample 1')
-display(spectrogram(axs[1, 0], sample1, sr1, ''), target="plot"); 
+sr1, sample1 = wavread('./reunion.wav');
+sample1 = sample1[:int(len(sample1)/4)]
+figure, axs = plt.subplots(1,2); figure.set_size_inches(18, 8); figure.suptitle("Stayin' Alive")
+axs[0].plot(sample1); axs[0].set_title("Waveform")
+a = spectrogram(axs[1], sample1, sr1)
+display(figure, target="plot"); 

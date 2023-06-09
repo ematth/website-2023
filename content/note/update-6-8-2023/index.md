@@ -5,7 +5,7 @@ categories:
     - Updates
 tags:
     - Python
-draft: true
+draft: false
 disable_comments: false
 enable_python: true
 ---
@@ -13,7 +13,7 @@ enable_python: true
 <head>
 <py-config hidden src="pyconfig.toml">
 [[fetch]]
-files = ["./updatecode.py"]
+files = ["./updatecode.py", "./reunion.wav"]
 </py-config>
 </head>
 
@@ -23,6 +23,7 @@ Hey Everyone,
 
 My website now has support for Python code using [PyScript](https://pyscript.net/)! This means that, on top of formatting code for LaTeX formulas...
 
+<div id="test"></div>
 <div id="plot"></div>
 <py-script src="updatecode.py"></py-script>
 
