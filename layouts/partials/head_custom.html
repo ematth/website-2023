@@ -7,6 +7,6 @@
 <meta name="theme-color" content="#ffffff">
 
 <!-- Py-Script imports -->
-{{ if .IsHome }}
+{{ if and (.IsPage) ((.Params.enable_python)) }}
 <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 {{ end }}

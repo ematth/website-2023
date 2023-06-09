@@ -1,0 +1,4 @@
+packages = ["scipy", "numpy", "matplotlib"]
+terminal = false
+[[splashscreen]]
+enabled = false

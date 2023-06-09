@@ -1,6 +1,7 @@
 ---
 title: About
 disable_comments: true
+disable_python: true
 ---
 <br>
 
