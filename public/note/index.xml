@@ -6,7 +6,18 @@
     <description>Recent content in Blog on Evan Matthews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/note/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/note/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Update: Python Compatability</title>
+      <link>https://ematth.dev/note/update-python-compatability/</link>
+      <pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ematth.dev/note/update-python-compatability/</guid>
+      <description>[[fetch]] files = [&#34;./updatecode.py&#34;, &#34;./reunion.wav&#34;] Hey everyone,
+My website now has support for Python code using PyScript! This means that, on top of formatting code for LaTeX formulas&amp;hellip;
+sr1, sample1 = wavread(&#39;./reunion.wav&#39;) sample1 = sample1[:int(len(sample1)/4)] figure, axs = plt.subplots(1,2) figure.set_size_inches(18, 8) figure.suptitle(&amp;quot;Chopin Op.28 No. 1 \&amp;quot;Reunion\&amp;quot;&amp;quot;) axs[0].plot(sample1); axs[0].set_title(&amp;quot;Waveform&amp;quot;) a = spectrogram(axs[1], sample1, sr1) display(figure, target=&amp;quot;plot&amp;quot;) &amp;hellip;my website can now show implementations of formulas and display and plot code output! I hope to start using this feature for my future Audio Processing articles by directly implementing Python code into the page.</description>
+    </item>
+    
     <item>
       <title>Update: Comments &amp; Future Articles</title>
       <link>https://ematth.dev/note/update-comments-future-articles/</link>
