@@ -9,7 +9,7 @@ disable_comments: true
 
 # Evan Matthews
 
-## $$\frac{1}{n}\sum_{i=0}^{n} (y_i - (mx_i + c))^2$$
+<img src="graph.png" style="max-width:500px;max-height:500px" />
 
 <i>**Welcome to my website!**</i>
 

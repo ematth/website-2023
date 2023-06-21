@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 from scipy.io.wavfile import read
 from scipy.signal import spectrogram
 from matplotlib import cm
-import math
 
 ## FUNCTIONS
 
@@ -56,20 +55,25 @@ def spec_plot(plot, sample, sr, interval, nfft=2048):
     f, t, s = spectrogram(sample, sr, axis=0, nfft=nfft)
     plot.pcolormesh(t, f, 10.0*np.log10(s), shading="auto")
     plot.locator_params(axis='x', nbins=interval*2)
-    plot.set_xlabel('time (s)')
+    # plot.set_xlabel('time (s)')
     freq_range = range(0, sr//2, 1000*interval)
-    plot.set_yticks([i for i in freq_range], [f'{i//1000}' for i in freq_range])
-    plot.set_ylabel('Frequency (kHz)')
-    plot.set_title('Spectrogram')
+    plot.set_xticks([])
+    plot.set_yticks([])
+    # plot.set_yticks([i for i in freq_range], [f'{i//1000}' for i in freq_range])
+    # plot.set_ylabel('Frequency (kHz)')
+    # plot.set_title('Spectrogram')
 
 def spec3d_plot(plot, sample, sr, interval, nfft=2048):
     f, t, s = spectrogram(sample, sr, axis=0, nfft=nfft)
     plot.plot_surface(f[:, None], t[None, :], 10.0*np.log(s), cmap=cm.viridis)
-    plot.set_title('3D Spectrogram')
+    # plot.set_title('3D Spectrogram')
     freq_range = range(0, sr//2, 1000*interval)
-    plot.set_xticks([i for i in freq_range], [f'{i//1000}' for i in freq_range])
-    plot.set_xlabel('Frequency (kHz)')
-    plot.set_ylabel('time(s)')
+    plot.set_xticks([])
+    plot.set_yticks([])
+    plot.set_zticks([])
+    # plot.set_xticks([i for i in freq_range], [f'{i//1000}' for i in freq_range])
+    # plot.set_xlabel('Frequency (kHz)')
+    # plot.set_ylabel('time(s)')
 
 
 # def audioplot(sample, sr):
