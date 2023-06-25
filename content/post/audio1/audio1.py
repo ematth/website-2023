@@ -5,7 +5,7 @@ from audioplot import *
 from spectralfactor import *
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.io.wavfile import read
+from scipy.io.wavfile import read, write
 
 SINE = lambda x, a=1, b=0 : (a * np.sin(2*np.pi*x)) + b
 
@@ -41,9 +41,10 @@ def fig2():
     fig = plt.figure(); 
 
     sr, sample = wavread('staywithme.wav'); sample = np.sum(sample, axis=1)
+    sample=sample[:5*sr]
 
     ax = fig.add_subplot(1,2,1)
-    wave_plot(ax, sample[20000::20005], xbins=0, ybins=0, 
+    wave_plot(ax, sample, xbins=0, ybins=0, 
                     xbinlabels=[], ybinlabels=[],
                     xlabel='', ylabel='', title='', grid=True)
 

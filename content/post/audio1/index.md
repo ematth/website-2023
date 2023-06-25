@@ -37,7 +37,7 @@ Words words words words
 
 <img src="plot1.png" alt="plot of a simple sine function">
 
-Although all sounds can be defined as a collection of sine waves, the human ear doesn't *hear* the individual **samples**, or cycles of a oscillating function. Instead, samples are played with high frequency as for the human hear to audibly combine the samples into a cohesive sound. Standards for **sample rate**, or the number of samples played per seconds in **Hertz (Hz)**, can range from 44,100 Hz to nearly 192,000 Hz in professional studios.
+Although all sounds can be defined as a collection of sine waves, the human ear doesn't *hear* the individual **samples**, or cycles of a oscillating function. Instead, samples are played at such a high rate that the human ear can't audibly pinpoint specific samples. Instead, the samples combine the into one cohesive sound. Standards for **sample rate**, or the number of samples played per second in **Hertz (Hz)**, can range from 44,100 Hz to nearly 192,000 Hz in professional studios.
 
 If human hearing only spans the range of 20 Hz - 20,000 Hz, why do we use much higher sample rates? The answer is that, in order to process an audio signal without losing information, we need need to use a sample rate that is at least twice as big as the highest frequency sound in the signal. This is known as the **Nyquist Limit**, and is the reason signals typically use a sample rate in the 40 kHz range. And while human hearing isn't capable of capturing anything beyond this range, music producers often use even higher sample rates as a means of capturing higher-resolution audio.
 
