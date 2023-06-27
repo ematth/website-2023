@@ -44,14 +44,14 @@ def fig2():
     sample=sample[:5*sr]
 
     ax = fig.add_subplot(1,2,1)
-    wave_plot(ax, sample, xbins=0, ybins=0, 
+    wave_plot(ax, sample[20000:20180], xbins=0, ybins=0, 
                     xbinlabels=[], ybinlabels=[],
-                    xlabel='', ylabel='', title='', grid=True)
+                    xlabel='A couple frames...', ylabel='', title='', grid=True)
 
     ax2 = fig.add_subplot(1,2,2)
     wave_plot(ax2, sample, xbins=0, ybins=0, 
                     xbinlabels=[], ybinlabels=[],
-                    xlabel='', ylabel='', title='', grid=True)
+                    xlabel='and a lot more frames!', ylabel='', title='', grid=True)
     
     
     
@@ -88,33 +88,7 @@ def fig3():
     fig.tight_layout()
     fig.savefig('plot3.png')
 
-
-# def fig4(k=4):
-#     fig = plt.figure()
-
-#     sr, sample = wavread('staywithme.wav'); 
-#     sample = np.sum(sample, axis=1)
-#     sample = sample[:5*sr]
-
-#     sample_stft = np.absolute(stft(sample)).T
-
-#     h, w = spectral_components(sample_stft, 4)
-
-#     colors=['blue', 'red', 'green', 'orange']
-#     for i in range(k):
-#         ax = fig.add_subplot(1, k, i+1)
-#         wave_plot(ax, h[i], xbins=2, ybins=2, 
-#                     xbinlabels=['',''], ybinlabels=['',''],
-#                     xlabel='', ylabel='', title='', grid=True, color=colors[i])
-        
-#     fig.set_size_inches(18,8)
-#     fig.tight_layout()
-#     fig.savefig('plot4.png')
-
-
-
 if __name__ == '__main__':
-    # fig1()
+    fig1()
     fig2()
     fig3()
-    # fig4()

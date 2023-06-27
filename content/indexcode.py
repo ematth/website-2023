@@ -44,7 +44,7 @@ def test3():
     spec = fig.add_gridspec(1, 1)
 
     ax = fig.add_subplot(spec[0, 0], projection='3d')
-    spec3d_plot(ax, sample, sr)
+    spec3d_plot(ax, sample, sr, xbins=4)
     fig.tight_layout()
     fig.savefig("graph.png")
 

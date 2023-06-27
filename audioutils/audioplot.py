@@ -1,14 +1,24 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.io.wavfile import read
-from scipy.signal import spectrogram
-from matplotlib import cm
 
-## FUNCTIONS
+REAL = int or float or complex
 
-def plot_range(dist: list[int or float] = (0, 1), bins: int = 0, divisor: int = 1, decimal: int = 2):
-    """
-    Given a range to mark on an axis, returns a list of evenly-spaced values for the axis, with approximated labels.
+
+def plot_range(dist: list[REAL] = (0, 1), 
+               bins: int = 0, 
+               divisor: int = 1, 
+               decimal: int = 2) -> tuple[list[int or float], list[str]]:
+    """ Returns a range of evenly-spaced values in a desired range.
+
+    Args:
+        dist (list[REAL], optional): List of two values denoting the range of values to plot. Defaults to (0, 1).
+        bins (int, optional): Number of markers to plot in the range. Defaults to 0.
+        divisor (int, optional): Integer scalar for range; 
+            setting divisor to the sample rate of the waveform scales the axis to seconds. Defaults to 1.
+        decimal (int, optional): Number of decimal places to round marker values to. Defaults to 2.
+
+    Returns:
+        tuple[list[int or float], list[str]]: list of evenly-spaced values.
     """
 
     if bins <= 0: # If empty, provide no markers or labels
@@ -20,23 +30,58 @@ def plot_range(dist: list[int or float] = (0, 1), bins: int = 0, divisor: int = 
     labels = [f'${round(i / divisor, decimal)}$' for i in result]
     return result, labels
 
-# Read in .wav files as sample rate (integer), and array of values.
-def wavread(path):
+
+from scipy.io.wavfile import read
+def wavread(path: str) -> tuple[int, list[int or float]]:
+    """Read in .wav files as sample rate (integer), and array of values;
+    uses import "read" from scipy.io.wavfile.
+
+    Args:
+        path (str): file path to .wav file
+
+    Returns:
+        tuple[int, list[int or float]]: n-D array of len(array) samples and n channels.
+    """
+
     sr, s = read(path)
-    return sr, s.astype('float32')/32768
+    return sr, s.astype('float32')
 
 
-# Plot waveform of an audio file
-def wave_plot(plot, sample, sr=48000, xbins=2, ybins=2,
-              xbinlabels=[], ybinlabels=['$-\\alpha$', '$0.0$', '$\\alpha$'],
-              xlabel='samples', ylabel='Amplitude', title='Waveform',
-              grid=False, color='C0'):
+def wave_plot(plot: plt.Axes, 
+              sample: np.ndarray or list[REAL], 
+              sr: int or float = 48000, 
+              xbins: int = 2, 
+              ybins: int = 2,
+              xbinlabels: list[str] = [], 
+              ybinlabels: list[str] = ['$-\\alpha$', '$0.0$', '$\\alpha$'],
+              xlabel: str = 'samples', 
+              ylabel: str = 'Amplitude', 
+              title: str = 'Waveform',
+              grid: bool = False, 
+              color: str ='C0') -> None:
+    """Generates a waveform graph into the given plot.
+
+    Args:
+        plot (plt.Axes): plot to graph the waveform to.
+        sample (np.ndarrayorlist[REAL]): sample array to be loaded as a waveform.
+        sr (intorfloat, optional): sample rate of the waveform. Defaults to 48000.
+        xbins (int, optional): number of markers to plot in the x-axis. Defaults to 2.
+        ybins (int, optional): number of markers to plot in the y-axis Defaults to 2.
+        xbinlabels (list[str], optional): List of marker strings to replace default x-axis labels. Defaults to [].
+        ybinlabels (list[str], optional): List of marker strings to replace default y-axis labels. Defaults to ['$-\alpha$', '.0$', '$\alpha$'].
+        xlabel (str, optional): label string for x-axis. Defaults to 'samples'.
+        ylabel (str, optional): label string for y-axis. Defaults to 'Amplitude'.
+        title (str, optional): title for waveform. Defaults to 'Waveform'.
+        grid (bool, optional): boolean option to show or hide grid lines. Defaults to False.
+        color (str, optional): color of the waveform. Defaults to 'C0'.
+    """
+
     plot.plot(sample, color=color)
 
     # Axis markers and labels
     xrange, xlabels = plot_range([0, len(sample)], bins=xbins, divisor=sr, decimal=2)
     plot.set_xticks(xrange, labels=xbinlabels if (len(xbinlabels) == len(xrange)) else xlabels)
-    yrange, ylabels = plot_range([round(np.min(sample)), round(np.max(sample))], bins=2, decimal=2)
+    yrange, ylabels = plot_range([round(np.min(sample)), round(np.max(sample))], bins=ybins, decimal=2)
     plot.set_yticks(yrange, labels=ybinlabels if (len(ybinlabels) == len(yrange)) else ylabels)
 
     # Plot appearance
@@ -48,14 +93,30 @@ def wave_plot(plot, sample, sr=48000, xbins=2, ybins=2,
     plot.set_title(title)
 
 
-# STFT Function
 DFT_SIZE = 2048
-HOP_SIZE = 256
-WINDOW = np.hanning(DFT_SIZE)
 from scipy import fft
-def stft( input_sound, dft_size=DFT_SIZE, hop_size=HOP_SIZE, zero_pad=0, window=WINDOW):
-    frames = []
+def stft( input_sound: np.ndarray or list[int or float], 
+         dft_size: int = DFT_SIZE, 
+         hop_size: int = 256, 
+         zero_pad: int = 0, 
+         window: np.ndarray = np.hanning(DFT_SIZE)) -> np.ndarray:
+    """Returns the Fast-Fourier Transform (FFT) for the given sample array.
+
+    Args:
+        input_sound (np.ndarrayorlist[int or float]): sample array
+        dft_size (int, optional): size of FFT bin to compute. Defaults to DFT_SIZE.
+        hop_size (int, optional): length to traverse between computing DFT bins; 
+            this value is typically less than or equal to dft_size, 
+            where a value less than will cause overlap between bins. Defaults to 256.
+        zero_pad (int, optional): Number of empty samples to pad the sample with on both ends of the array. Defaults to 0.
+        window (np.ndarray, optional): windowing function for computing FFT. Defaults to np.hanning(DFT_SIZE).
+
+    Returns:
+        np.ndarray: numpy array of real values.
+    """
+
     # zero-padding for equally sized frames
+    frames = []
     input_sound = np.append(input_sound, np.zeros(len(input_sound) % dft_size))
 
     for i in range(0, len(input_sound) - dft_size, hop_size):
@@ -63,14 +124,38 @@ def stft( input_sound, dft_size=DFT_SIZE, hop_size=HOP_SIZE, zero_pad=0, window=
         frames.append(frame)
 
     spectrogram = np.array([(fft.rfft(f, dft_size + zero_pad)) for f in frames], dtype=np.complex64)
-    # Return a complex-valued spectrogram (frequencies x time)
+    # Return a complex-valued spectrogram (frequency by time)
     return spectrogram.T 
 
 
-# Plot waveform of an audio file
-def spec_plot(plot, sample, sr, nfft=2048, xbins=2, ybins=2,
-              xbinlabels=[], ybinlabels=[],
-              xlabel='time (s)', ylabel='Frequency (kHz)', title='Spectrogram', cmap=cm.viridis):
+def spec_plot(plot: plt.Axes,
+            sample: np.ndarray or list[REAL],
+            sr: int, 
+            nfft: int = 2048,
+            xbins: int = 2,
+            ybins: int = 2,
+            xbinlabels: list[str] = [], 
+            ybinlabels: list[str] = [],
+            xlabel: str = 'time (s)', 
+            ylabel: str = 'Frequency (kHz)', 
+            title: str = 'Spectrogram', 
+            cmap: str = 'viridis') -> None:
+    """Generates a spectrogram for the given plot.
+
+    Args:
+        plot (plt.Axes): plot to generate the spectrogram into.
+        sample (np.ndarrayorlist[REAL]): sample array to be computed into spectrogram
+        sr (int): sample rate of the sample
+        nfft (int, optional): dft_size, or number of bins computed for STFT. Defaults to 2048.
+        xbins (int, optional): number of markers to plot for x-axis. Defaults to 2.
+        ybins (int, optional): number of makrers to plot for y-axis. Defaults to 2.
+        xbinlabels (list[str], optional): list of substitute strings for default x-axis markers. Defaults to [].
+        ybinlabels (list[str], optional): list of substitute strings for default y-axis markers. Defaults to [].
+        xlabel (str, optional): x-axis label/unit description. Defaults to 'time (s)'.
+        ylabel (str, optional): y-axis label/unit description. Defaults to 'Frequency (kHz)'.
+        title (str, optional): title of the spectrogram. Defaults to 'Spectrogram'.
+        cmap (str, optional): color-mapping to render the spectrogram in. Defaults to 'viridis'.
+    """
     
     sample_stft = stft(sample, dft_size=nfft, hop_size=nfft//16)
 
@@ -90,41 +175,36 @@ def spec_plot(plot, sample, sr, nfft=2048, xbins=2, ybins=2,
     plot.set_title(title)
 
 
-def spec3d_plot(plot, sample, sr, nfft=2048, xbins=2, ybins=2, zbins=2):
-    f, t, s = spectrogram(sample, sr, axis=0, nfft=nfft)
-    s = 10.0*np.log(s)
+from scipy.signal import spectrogram
+def spec3d_plot(plot: plt.Axes, 
+                sample: np.ndarray or list[int or float or complex], 
+                sr: int, 
+                nfft: int = 2048, 
+                xbins: int = 2, 
+                ybins: int = 2, 
+                zbins: int = 2,
+                cmap: str = 'viridis'):
+    """Generates a three-dimensional spectrogram for the given plot.
 
-    # I don't know why this line works, it just does
-    plot.plot_surface(t[None, :], f[:, None], s, cmap=cm.viridis)
+    Args:
+        plot (plt.Axes): plot to generate the 3D-spectrogram into
+        sample (np.ndarrayorlist[int or float or complex]): sample array of values
+        sr (int): sample rate of the sample
+        nfft (int, optional): size of dft bin to compute STFT. Defaults to 2048.
+        xbins (int, optional): number of markers for the x-axis. Defaults to 2.
+        ybins (int, optional): number of markers for the y-axis. Defaults to 2.
+        zbins (int, optional): number of markers for the z-axis. Defaults to 2.
+        cmap (str, optional): color-mapping to render the 3D-spectrogram in. Defaults to 'viridis'.
+    """
+    
+    f, t, s = spectrogram(sample, sr, axis=0, nfft=nfft)
+    s = 10.0 * np.log(s) # log scale for spectrum
+
+    plot.plot_surface(t[None, :], f[:, None], s, cmap=cmap)
 
     plot.set_xticks(np.linspace(0, len(sample)//sr, xbins))
     plot.set_yticks(np.linspace(0, sr/2, ybins))
     plot.set_zticks(np.linspace(np.min(s), 0, zbins))
-    # plot.set_xticks([i for i in freq_range], [f'{i//1000}' for i in freq_range])
     plot.set_ylabel('Frequency (kHz)')
-    plot.set_xlabel('time(s)')
-    plot.set_zlabel('Intensity (dB)')
-
-
-# def audioplot(sample, sr):
-
-#     fig = plt.figure()
-
-#     ax1 = fig.add_subplot(1,3,1); ax1.set_yticks([])
-#     ax2 = fig.add_subplot(1,3,2)
-#     ax3 = fig.add_subplot(1,3,3, projection='3d')
-#     fig.set_size_inches(12, 6)
-#     fig.suptitle("Chopin Op.28 No.1")
-
-#     wave_plot(ax1, sample1, sr1, 5)
-#     spec_plot(ax2, sample1, sr1, 5)
-#     spec3d_plot(ax3, sample1, sr1, 5)
-#     sm = cm.ScalarMappable(cmap=cm.viridis)
-#     fig.colorbar(sm, ax=ax3, pad=0.15)
-#     fig.tight_layout(pad=2.0)
-#     plt.show()
-
-# if __name__ == '__main__':
-#     sr1, sample1 = wavread('./reunion.wav')
-#     sample1 = np.sum(sample1, axis=1)
-#     audioplot(sample1, sr1)
+    plot.set_xlabel('time (s)')
+    plot.set_zlabel('Volume (dB)')
