@@ -18,7 +18,7 @@ When not programming or doing research, Evan enjoys playing piano and biking.
   <br><i>Urbana, IL </i>
 
 - University of Illinois Urbana-Champaign -> 2019-2023
-  <br><b>B.S. Computer Science + Music</b>
+  <br><b>B.S. Computer Science + Music</b> with High Honors
   <br><i>Urbana, IL</i>
 
 - Metamora Township High School -> 2015-2019

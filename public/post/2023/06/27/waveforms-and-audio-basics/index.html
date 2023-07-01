@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Waveforms and Audio Basics | Evan Matthews</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/projects/">Projects</a></li>
+      
+      <li><a href="/note/">Blog</a></li>
+      
+      <li><a href="/post/">Audio Processing</a></li>
+      
+      <li><a href="/Matthews_Resume_Fall2023.pdf">Resume</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Waveforms and Audio Basics</span></h1>
+
+<h2 class="date">2023/06/27</h2>
+</div>
+
+<main>
+<!-- Py-Config header -->
+<head>
+<py-config hidden src="pyconfig.toml">
+[[fetch]]
+files = ["./audio1.py"]
+</py-config>
+</head>
+<!-- Content -->
+<h1 id="introduction">Introduction</h1>
+<p>Understanding the mathematical logic behind sound- how certain factors effect what we hear and how we hear it- is the first step into audio signal processing. You should likely understand some basics about trigonometry and periodic functions to best understand the content. This article will run through basic vocabulary, explain how sound is processed and stored digitally, and demonstrate basic audio processing techniques in Python.</p>
+<div id="plot" style="width:100%;padding:0px;"></div>
+<hr>
+<h1 id="waveforms">Waveforms</h1>
+<p><strong>Sound</strong> is the displacement of air particles over time. We can describe the displacement of air particles graphically as a <strong>waveform</strong>, which plots the displacement of particles (called <em>amplitude</em>) in terms of time $t$. Take, for example, a simple sine function $f(t) = \alpha\cdot \sin(2\pi \cdot t)$, where $\sin(2\pi \cdot t)$ <em>oscillates</em> (moves in a constant range indefinitely), and $\alpha$ is a constant defining the upper and lower bounds of the function&rsquo;s amplitude. Below, I&rsquo;ve plotted one complete <strong>wavelength</strong> (the length of one complete cycle), four complete cycles, and a much larger number of cycles.</p>
+<img src="plot1.png" alt="plot of a simple sine function">
+<p>Although all sounds can be defined as a collection of sine waves, the human ear doesn&rsquo;t <em>hear</em> the individual <strong>samples</strong>, or cycles of a oscillating function. Instead, samples are played at such a high rate that the human ear can&rsquo;t audibly pinpoint specific samples. Instead, the samples combine the into one cohesive sound. Standards for <strong>sample rate</strong>, or the number of samples played per second in <strong>Hertz (Hz)</strong>, can range from 44,100 Hz to nearly 192,000 Hz in professional studios.</p>
+<p>If human hearing only spans the range of 20 Hz - 20,000 Hz, why do we use much higher sample rates? The answer is that, in order to process an audio signal without losing information, we need need to use a sample rate that is at least twice as big as the highest frequency sound in the signal. This is known as the <strong>Nyquist Limit</strong>, and is the reason signals typically use a sample rate in the 40-48 kHz range. And while human hearing isn&rsquo;t capable of capturing anything beyond this range, music producers often use even higher sample rates as a means of capturing higher-resolution audio.</p>
+<hr>
+<h1 id="basic-waves-and-sounds">Basic Waves and Sounds</h1>
+<p>All audio signals can be described as some manipulation of sine waves, through the processes of <strong>additive and subtractive synthesis.</strong> Essentially, this allows us to create whatever sounds we like by combining and manipulating simple sines waves to form much more complex sounds. Here&rsquo;s a plot of a couple of frames versus a much larger snippet of sound.</p>
+<img src="plot2.png" alt="plot of an excerpt from 'Stay With Me' by Miki Matsubara">
+<p>From here, we can introduce more concepts related to audio signals. For example, sound can depend on the <strong>number of channels</strong> used to output an audio signal. You&rsquo;re likely used to hearing <strong>stereophonic sound</strong>, where a left and right channel output specific audio signals to the left and right side of a listening body.</p>
+<img src="plot3.png">
+<p>This allows for some neat tricks, such as hearing something coming from one side of you and not another. In a similar vain, <strong>monophonic sound</strong> uses one channel for all audio, meaning that you&rsquo;ll hear the same sound across all speakers, even if you&rsquo;re wearing a pair of headphones or sitting in a multi-channel studio.</p>
+<p>Another major concept to keep in mind is that, considering that all sounds are a combination of periodic functions, the process of editing sound is a matter of <em>transforming a sound&rsquo;s waveform mathematically</em> to make get a desired sound. As you read and run the provided code snippets, I highly suggest graphing and considering what sort of transformation you&rsquo;re applying to the waveform and how that changes the overall sound.</p>
+<hr>
+<h1 id="audio-editing-through-code">Audio Editing through Code</h1>
+<p>To start, in your Python development environment of choice, we&rsquo;ll import a couple important libraries:</p>
+<pre><code class="language-python3">import numpy as np
+import matplotlib.pyplot as plt
+from scipy.io.wavfile import read, write
+</code></pre>
+<p><strong>Numpy</strong> is the go-to library for large, multi-dimensional arrays and contains a lot of powerful tools that we&rsquo;ll use to simplify our code on the mathematical side. <strong>Matplotlib</strong> is the standard Python library for representing data graphically, and we&rsquo;ll use <strong>pyplot</strong> to visualize our waveforms. Finally, <strong>Scipy</strong> is also a well-loved scientific computing library, and we&rsquo;ll import its <em>read</em> and <em>write</em> functions from the <em>io.wavfile</em> module to import .wav files.</p>
+<blockquote>
+<p>💡 Plenty of other sound file types (mp3, aiff) and audio processing libraries (librosa) exist. While these are also worth checking out, it should be stated that .wav is the most common for audio processing.</p>
+</blockquote>
+<p>With our necessary libraries imported, grab your favorite .wav sound file and load it with</p>
+<pre><code class="language-python3">path = '/path/to/filename.wav'
+sr, sample = read(path).astype('float32')
+</code></pre>
+<p>where <code>sr</code> and <code>sample</code> are the sample rate and sample data of our sound, respectively. The last line uses <code>astype('float32')</code> to convert our data into the &ldquo;float32&rdquo; WAV format, which normalizes our data to the range [-1.0, 1.0]. There are also other type ranges which you can find the numpy dtypes to on the <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.io.wavfile.read.html">scipy.io.wavfile.read documentation page</a>. Keep in mind that this also scales our amplitude to the range [0.0, 1.0], which will be important soon.</p>
+<p>Without immediately discussing periodic functions or other technical details, we can already do some basic audio processing. For example, we can do some basic audio editing with <strong>list splicing.</strong> The notation for python list splicing is <code>array[start:stop:step]</code>, where this code represents an array parsed in the range <code>[start, stop)</code> every <code>step</code> number of samples.</p>
+<pre><code class="language-python3">a = sample[0:4 * sr] # Returns the first 3 seconds of the sound
+b = sample[4 * sr:0] # Returns the last 3 seconds of the sound
+</code></pre>
+<blockquote>
+<p>For list splicing, if you leave the arguments for <code>[start:stop:step]</code> empty, their values will default to <code>0</code>, <code>len(array)</code> and <code>1</code>, respectively.</p>
+</blockquote>
+<p>Since sample rate is defined as the number of samples played per second, we can return snippets of our original sample- <em>down to the individual sample</em>- without needing to guess-and-check values for the desired range.</p>
+<p>We can also use list splicing and Numpy&rsquo;s <code>repeat()</code> function to do some very rudimentary speed-up and slow-down effects. To speed up a sample, simply step through your sound file with an step integer greater than 1. To slow down a sample, duplicate each sample in place some integer number of times greater than 1. However, these methods aren&rsquo;t the best, but we&rsquo;ll discuss why and better methods to use in a future article.</p>
+<pre><code class="language-python3">speed_up = sample[::2] # Speed up the sample by a factor of 2
+
+slow_down = np.repeat(sample, 2, axis=0) # duplicates every sample in place, 
+                                         # (slowing by a factor of 2, or
+                                         # speeding up by a factor of 1/2).
+</code></pre>
+<p>Finally, you can save and listen to your edited sample by writing the result back to a .wav file.</p>
+<pre><code class="language-python3">write('newfile.wav', sr, variable_name)
+</code></pre>
+<blockquote>
+<p>⚠️ As I mentioned above about multi-channel sound, if you decided to use your own .wav file, your <code>sample</code> file may contain more than one row, meaning it is a stereo or multi-channel sound file. In this case, you&rsquo;ll need to make sure that your operations are applied to <em>every</em> row of the sample array.</p>
+</blockquote>
+<hr>
+<h1 id="sounds-from-scratch">Sounds from Scratch</h1>
+<p>While being able to edit existing audio files is incredibly useful, it&rsquo;s even more useful to be able to create our own sounds from scratch. To start, we&rsquo;ll return to the sine function we saw earlier, but instead make an addition:</p>
+<p>$$ g(t) = \alpha \cdot \sin(\underline{f}\cdot 2\pi \cdot t) $$</p>
+<p>Initially we had only defined our function in terms of time and amplitude, but now we&rsquo;ll introduce a new constant $f$ for frequency. This value defines the number of complete <em>periods</em> or cycles of our function we&rsquo;ll complete with respect to our sample rate. To create a function for playing a single, specific frequency in Hertz, all we have to do is substitute that value in for $f$:</p>
+<pre><code class="language-python3">sine = lambda time, freq, amp=1: amp * np.sin(freq * 2 * np.pi * time) # general sine function
+sr = 48000 # sample rate
+duration = 3 # number of seconds to play the sample for
+t = np.linspace(0, duration, num=sr * duration) # time space for our sine function.
+
+a_natural = sine(t, 440)
+write('a440.wav', sr, a_natural)
+</code></pre>
+<p>In the following code excerpt, I use a <strong>lambda function</strong>, which is essentially a one-line python function, to code the provided equation. This function takes in a time space <code>time</code> and frequency <code>freq</code>, and the amplitude <code>amp</code> is defaulted to 1, the maximum volume. <code>np.linspace()</code> generates an array of evenly-spaced values from a provided range with length <code>num</code>. In this case, the time space of this sample is from <code>0</code> to <code>duration</code> seconds, with <code>(duration * sr)</code> number of samples in between the time space. The code above returns this .wav file:</p>
+<audio controls>
+<source alt=A440 sine wave" src="a440.wav" type="audio/wav">
+</audio>
+<p>To make our sound more complex, we can sum our sample element-wise with other samples, but this introduces a new problem. <strong>If we try to sum two frequencies with maximum amplitudes, the resulting sound will be very loud and distorted.</strong> This is due to the summed values of our function going beyond the amplitude range for the individual components. As a result, values beyond this range will fold over, causing <strong>aliasing</strong> which distorts our summed sound with samples above the Nyquist Limit. To combat this, we&rsquo;ll need to <strong>element-wise divide our sample array by the number of summed frequencies.</strong> This will scale the amplitude of the summed sample array with respect to our amplitude range, but we can still change the overall volume of our sound with our amplitude constant.</p>
+<p>$$g(t) = \frac{\alpha}{|F|} \sum_{i=1}^{|F|} \sin{(F_i\cdot 2\pi \cdot t)},\\ \space \\
+\alpha \in [0.0, 1.0], \quad F=\{f \mid 20 \le f \le 20,000\}$$</p>
+<pre><code class="language-python3"># Sine function for multiple frequencies
+def sine(time:float, freqs:list[float]=[440], amp:float=1) -&gt; list[float]:
+        signal = np.zeros_like(time)
+        for f in freqs:
+            signal += np.sin(f * 2 * np.pi * t)
+        return (amp/len(freqs) * signal).astype('float32')
+
+# Defining the time space
+sr = 8000 # sample rate
+duration = 3 # number of seconds to play the sample for
+t = np.linspace(0, duration, num=sr * duration) # time space for our sine function.
+
+# Making an A-Major chord!
+a_major = sine(t, [440, 554.37, 669.25])
+write('a_major.wav', sr, a_major)
+
+</code></pre>
+<audio controls>
+<source alt=A-Major Chord" src="a_major.wav" type="audio/wav">
+</audio>
+<p>In plotting this summed sound and zooming in on a few samples, we can also see how the individual sine waves overlap.</p>
+<img src="plot4.png">
+
+</main>
+
+  <footer>
+  
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+  
+  <hr/>
+  © Evan Matthews 2023 | <a href="https://github.com/evanmm3">Github</a> | <a href="https://www.linkedin.com/in/ematth/">LinkedIn</a>
+  
+  </footer>
+  </body>
+</html>
+

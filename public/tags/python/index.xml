@@ -6,7 +6,16 @@
     <description>Recent content in Python on Evan Matthews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Waveforms and Audio Basics</title>
+      <link>https://ematth.dev/post/2023/06/27/waveforms-and-audio-basics/</link>
+      <pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ematth.dev/post/2023/06/27/waveforms-and-audio-basics/</guid>
+      <description>[[fetch]] files = [&#34;./audio1.py&#34;] Introduction Understanding the mathematical logic behind sound- how certain factors effect what we hear and how we hear it- is the first step into audio signal processing. You should likely understand some basics about trigonometry and periodic functions to best understand the content. This article will run through basic vocabulary, explain how sound is processed and stored digitally, and demonstrate basic audio processing techniques in Python.</description>
+    </item>
+    
     <item>
       <title>Update: Python Compatability</title>
       <link>https://ematth.dev/note/update-python-compatability/</link>

@@ -6,18 +6,14 @@
     <description>Recent content in Audio Processing on Evan Matthews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/categories/audio-processing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/categories/audio-processing/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>DSP Basics</title>
-      <link>https://ematth.dev/post/2023/06/01/dsp-basics/</link>
-      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <title>Waveforms and Audio Basics</title>
+      <link>https://ematth.dev/post/2023/06/27/waveforms-and-audio-basics/</link>
+      <pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://ematth.dev/post/2023/06/01/dsp-basics/</guid>
-      <description>Introduction Words words words words
-Waveform We&amp;rsquo;ll define all sounds imported and exported as waveforms, or arrays of integer or floating-point values that designate the amplitude of a sound for each frame of sound. A single frame of a waveform won&amp;rsquo;t sound like much, (or anything at all), but when a number of frames are played sequentially, our ears can process the information.
-References Words
-Words
-Words</description>
+      <guid>https://ematth.dev/post/2023/06/27/waveforms-and-audio-basics/</guid>
+      <description>[[fetch]] files = [&#34;./audio1.py&#34;] Introduction Understanding the mathematical logic behind sound- how certain factors effect what we hear and how we hear it- is the first step into audio signal processing. You should likely understand some basics about trigonometry and periodic functions to best understand the content. This article will run through basic vocabulary, explain how sound is processed and stored digitally, and demonstrate basic audio processing techniques in Python.</description>
     </item>
     
   </channel>
