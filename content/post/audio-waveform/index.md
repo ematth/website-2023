@@ -165,3 +165,9 @@ write('a_major.wav', sr, a_major)
 In plotting this summed sound and zooming in on a few samples, we can also see how the individual sine waves overlap. 
 
 <img src="plot4.png">
+
+<hr>
+
+<!-- # References
+
+- [Global JOS Index: Sinusoids](https://ccrma.stanford.edu/~jos/mdft/Sinusoids.html#7773) -->
