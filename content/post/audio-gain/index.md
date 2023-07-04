@@ -14,7 +14,7 @@ enable_python: false
 
 The **amplitude** of a sound is physically defined as the amount of displacement produced by sound waves onto air particles. From the listener's point of view, this variable represents the "volume" of the sound.
 
-$$x(t) = A\sin(\omega t + \phi)$$
+$$S(t) = A\sin(\omega t + \phi)$$
 
 
 Given a sinusoidal function, we define $A$ to be our peak amplitude, or the highest volume that our sound reaches. That is, $\forall t \in \Reals, \space x(t) \in [-A, A] $, (for all inputs $t$, representing time in our sinusoidal function, $x(t)$ will always be between and include $-A$ and $A$).
@@ -45,6 +45,17 @@ $$A(t) = \begin{cases} \frac{t}{m} && t \lt m \\\\ 1 && m \le t \le n - m \\\\ \
 
 # Units
 
+In practical application, it is better to define amplitude in some physical unit of loudness rather than just an arbitrary unit. Amplitude is commonly define in terms of **Decibels (dB)**, and the unit conversion is
+
+$$\text{dB}(t) = \log10(\frac{A(t)}{|A_{\text{ref}}|})$$
+
+where $|A_{\text{ref}}|$ is the greatest amplitude encountered in the entire sound. This function attempts to scale all amplitude values to the acceptable hearing range of $(-\infty, 0] \text{ dB}$, though that doesn't mean that values above $0 \text{ dB}$ aren't possible. Any values above $0 \text{ dB}$ represent undesirably loud values (which should be mitigated at all times, in order to protect your hearing and your audio equipment.)
+
+For a practical example, suppose a sound $S$, normalized to amplitude values in the range $A(t)\in[-1.0, 1.0]$, contains some values that are too loud for normal listening. If we want a cutoff of $c = 0.8$ applied to the entire sound, we can substitute $A$ for
+
+  $$A_\text{cutoff}(t) = \begin{cases} c && A(t) \ge c \\\\ A(t) && \text{otherwise}\end{cases}$$
+
+which will "plateau" any values above $c$, essentially rescaling amplitude while maintaining the loudness of existing values in our sound.
 
 <!-- # References
 
