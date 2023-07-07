@@ -16,7 +16,7 @@ The **Fourier Transform** is a transformation of a time-series function which re
 
 $$\hat{f}(\xi) = \int_{-\infty}^{\infty} f(t) e^{-i2\pi\xi t} dt$$
 
-where $f(t)$ is the original function for our sound in terms of time $t$, and $\hat{f}(\xi)$ is an equivalent function in terms of frequency $\xi$. In essence, this function takes in a frequency and determines that frequency's *intensity* or usage in a sound across all time values $t$ in $f(t)$- hence why we're integrating with respect to time. For example, if we have a sound and want to know if the frequency A4 = 440 was used, we can compute $\hat{f}(440)$ to figure out whether or not there's a "peak" for this frequency, (indicating that it is exists in our sound.) 
+where $f(t)$ is the original function for our sound in terms of time $t$, and $\hat{f}(\xi)$ is an equivalent function in terms of frequency $\xi$. In essence, this function takes in a frequency and determines that frequency's *intensity* or usage in a sound across all time values $t$ in $f(t)$- hence why we're integrating with respect to time. For example, if we have a sound and want to know if the frequency A4 = 440 Hz was used, we can compute $\hat{f}(440)$ to figure out whether or not there's a "peak" for this frequency, (indicating that it is exists in our sound.) 
 
 However, this formula is much more complicated than a summation over time series, and we'll need to understand how $e^{-i2\pi\xi t}$ and the complex plane plays into the Fourier Transform.
 
@@ -26,9 +26,11 @@ Looking at only the imaginary term of $e^{-i2\pi\xi t}$, we can break it up into
 
 # Discrete Fourier Transform (DFT)
 
-With the basics of the Fourier Transform understood, we can jump into a more practical uses of this material. The above formula works on infinite, continuous time signals, but in a more applicable sense, we'd like to use this formula on finite, discrete time signals, (i.e. a set number of samples, and no information in between samples.) For that, we have the **Discrete Fourier Transform**, or **DFT**, which takes into account the sampling rate of the given sound.
+With the basics of the Fourier Transform understood, we can jump into a more practical uses of the fourier transform for audio processing. The above formula works on infinite, continuous time signals, but in a more applicable sense, we'd like to use this formula on finite, *discrete* time signals, (i.e. a set number of samples, with no information in between samples.) For that, we have the **Discrete Fourier Transform**, or **DFT**:
 
-$$X_k = \sum_{n=0}^{N}x_n e^{-i\frac{2\pi kn}{N}}$$
+$$X_k = \sum_{n=1}^{N}x_n e^{-i\frac{2\pi kn}{N}}$$
+
+The equation can be described like this: given a frequency $k$, $X_k$ returns the intensity of that frequency across all samples $n\in N$. The logic behind this equation is similar to the continuous Fourier transform, although this transformation will return an estimate for the frequency in the $N$ samples provided.
 
 <hr>
 
