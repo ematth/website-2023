@@ -6,6 +6,17 @@ disable_comments: true
 > **Note:**
 > Code for some projects on this list cannot be shared publicly because doing so would be a violation of UIUC's policies on [Academic Integrity.](https://provost.illinois.edu/policies/policies/academic-integrity/students-quick-reference-guide-to-academic-integrity/)
 
+# Nearest Neighbor Classication for Classical Image Upsampling
+
+- <b>Year:</b> November/December 2023
+- <b>Collaborator:</b> Nic Prate
+- <b>Professor:</b> Paris Smaragdis
+- <b>Tools:</b> Python, Jupyter Notebook
+- <b>[Github](https://github.com/ematth/KNN-Classical-Upsampling)</b>
+
+    Research project for CS 545: Machine Learning for Signal Processing. Explores the use of K-Nearest-Neighbors Interpolation for the purpose of image upsampling. 
+    Implementation expanded to include dynamic aspect ratio upsampling and selective upsampling to reduce computation time for images with solid-color regions.
+
 # Personal Website
 
 - <b>Year:</b> May 2023
@@ -13,7 +24,7 @@ disable_comments: true
 
     Built with [Hugo](https://gohugo.io/) and designed using the [XMIN](https://xmin.yihui.org/) theme. Read more about my journey through (<i>or around</i>) web development [here](/note/how-i-made-this-website/).
 
-# Capstone: Transcribing Monophonic Audio with Deep-Learning Data
+# Senior Capstone: Transcribing Monophonic Audio with Deep-Learning Data
 
 - <b>Year:</b> Spring 2023
 - <b>Advisor:</b> Zuofu Cheng

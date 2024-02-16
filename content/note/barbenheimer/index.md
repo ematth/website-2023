@@ -5,7 +5,6 @@ author: Evan Matthews
 categories:
     - Other
 tags:
-draft: false
 ---
 
 # Barbenheimer
