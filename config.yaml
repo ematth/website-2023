@@ -27,7 +27,7 @@ menu:
       url: "post/"
       weight: 5
     - name: Resume
-      url: "Matthews_Resume_Fall2023.pdf"
+      url: "Matthews_Resume.pdf"
       weight: 99
     # - name: Categories
     #   url: "categories/"
