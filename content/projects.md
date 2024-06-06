@@ -6,9 +6,29 @@ disable_comments: true
 > **Note:**
 > Code for some projects on this list cannot be shared publicly because doing so would be a violation of UIUC's policies on [Academic Integrity.](https://provost.illinois.edu/policies/policies/academic-integrity/students-quick-reference-guide-to-academic-integrity/)
 
+# Bayesian Grading: Analysis of Scores in the Context of Cheating
+
+- <b>Year:</b> May 2024
+- <b>Collaborators:</b> Yuxuan Chen, Victor Zhao
+- <b>Advisor:</b> Craig Zilles
+- <b>Tools:</b> Python, Jupyter Notebook
+
+    Research project for CS 500: Topics in Computer Education Research. Simulating student grades
+    as bayesian probabilities for analysis on trustworthiness. A combination of proctored (UIUC CBTF) and non-proctored scores were used in the simulation process.
+
+# Optical Music Recognition for LilyPond File Generation
+
+- <b>Year:</b> May 2024
+- <b>Professor:</b> Svetlana Lazebnik
+- <b>Tools:</b> Python, Jupyter Notebook
+- <b>[Paper](/files/cs444-report.pdf)</b>
+
+    Graduate project for CS 444: Machine Learning for Computer Vision. Analysis of state-of-the-art work in
+    Optical Music Recognition (OMR) with respect to several digital music notation formats. LilyPond is deemed to be a reasonable format for use in OMR given its current structure and underlying functionality for batch exporting. 
+
 # Nearest Neighbor Classication for Classical Image Upsampling
 
-- <b>Year:</b> November/December 2023
+- <b>Year:</b> November - December 2023
 - <b>Collaborator:</b> Nic Prate
 - <b>Professor:</b> Paris Smaragdis
 - <b>Tools:</b> Python, Jupyter Notebook
@@ -22,14 +42,14 @@ disable_comments: true
 - <b>Year:</b> May 2023
 - <b>Tools:</b> HTML, CSS, Markdown, Github Pages
 
-    Built with [Hugo](https://gohugo.io/) and designed using the [XMIN](https://xmin.yihui.org/) theme. Read more about my journey through (<i>or around</i>) web development [here](/note/how-i-made-this-website/).
+    Built with [Hugo](https://gohugo.io/) and designed using the [XMIN](https://xmin.yihui.org/) theme. Read more about my journey through web development [here](/note/how-i-made-this-website/).
 
 # Senior Capstone: Transcribing Monophonic Audio with Deep-Learning Data
 
 - <b>Year:</b> Spring 2023
 - <b>Advisor:</b> Zuofu Cheng
 - <b>Tools:</b> MIDI/MusicXML, MuseScore, Python
-- <b>[Website](https://singsong.gatsbyjs.io/), [Presentation](/capstone.pdf)</b>
+- <b>[Website](https://singsong.gatsbyjs.io/), [Presentation](/files/capstone.pdf)</b>
 
     Combined senior capstone project with Kevin Zhou. Our main goal was to implement a machine-learning model for rudimentary conversion of raw audio recordings into readable sheet music. I created the database of examples to be recorded and handled the business side of the study, and Kevin put together the webapp [SingSong](https://singsong.gatsbyjs.io/) for collecting recording data.
 
@@ -62,11 +82,19 @@ disable_comments: true
 - <b>Collaborators:</b> Renzo Ledesma, Katie Saunders, Kevin Zhou
 - <b>[Website](https://pan-lang.github.io/), [Github](https://github.com/Pan-Lang/pan-lang.github.io), [Devpost](https://devpost.com/software/pan-lang)</b>
 
-    Second prize winner at [PYGHACK 2020](https://pyghack2020.devpost.com/): a food pantry webapp designed providing translated lists and descriptions to patrons of Champaign and Urbana-area foodbanks. 
+    *Second prize winner at [PYGHACK 2020](https://pyghack2020.devpost.com/):* a food pantry webapp designed providing translated lists and descriptions to patrons of Champaign and Urbana-area foodbanks. 
 
 # Spotigraph
 - <b>Year:</b> Fall 2020
 - <b>Collaborators:</b> Beth Fineberg, Cale Wolf, Kevin Zhou
 - <b>Tools:</b> C++, Spotify API
 
-    Final project for CS 225; makes use of graph traversal algorithms to find the <i>k</i>th degrees of a given Spotify artist. 
+    Final project for CS 225; makes use of graph traversal algorithms to find the <i>k</i>th degrees of a given Spotify artist.
+
+# *WarioWare!*
+- <b>Year:</b> November - December 2019
+- <b>Collaborator:</b> Kevin Zhou
+- <b>Tools:</b> Java, Android Studio
+
+    Final project for CS 125: Intro to Computer Science, (*now CS 124: Intro to Computer Science I*). Android app consisting of several minigames in the style of Nintendo's *WarioWare*. Players are rewarded with coins which they can use to purchase trophies (Bitmojis of the CS 125 course staff).
+    *This app made the list of "Impressive Projects" at the CS 125 Final Project Fair.*   
