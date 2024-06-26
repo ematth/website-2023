@@ -26,6 +26,9 @@ menu:
     - name: Audio Processing
       url: "post/"
       weight: 5
+    - name: Sample Song Library
+      url: "ssl/"
+      weight: 6
     - name: Resume
       url: "files/Matthews_Resume.pdf"
       weight: 99
