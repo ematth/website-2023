@@ -6,15 +6,16 @@ disable_comments: true
 > **Note:**
 > Code for some projects on this list cannot be shared publicly because doing so would be a violation of UIUC's policies on [Academic Integrity.](https://provost.illinois.edu/policies/policies/academic-integrity/students-quick-reference-guide-to-academic-integrity/)
 
-# Bayesian Grading: Analysis of Scores in the Context of Cheating
+# A Case for Bayesian Grading
 
 - <b>Year:</b> May 2024
 - <b>Collaborators:</b> Yuxuan Chen, Victor Zhao
-- <b>Advisor:</b> Craig Zilles
+- <b>Advisor:</b> Craig B. Zilles, Matthew West
 - <b>Tools:</b> Python, Jupyter Notebook
 
     Research project for CS 500: Topics in Computer Education Research. Simulating student grades
     as bayesian probabilities for analysis on trustworthiness. A combination of proctored (UIUC CBTF) and non-proctored scores were used in the simulation process.
+    <i>Accepted to [SIGCSE Virtual 2024](https://sigcsevirtual.acm.org)!</i>
 
 # Optical Music Recognition for LilyPond File Generation
 
