@@ -4,6 +4,7 @@ title: "Evan Matthews"
 theme: "hugo-xmin"
 googleAnalytics: ""
 disqusShortname: "ematth"
+favicon: false
 
 permalinks:
   note: "/note/:slug/"
