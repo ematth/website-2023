@@ -11,6 +11,8 @@ disable_python: true
 
 When not programming or doing research, Evan enjoys playing piano and biking.
 
+Evan's [Erdős number](https://en.wikipedia.org/wiki/Erdős_number) is 4.
+
 ## Education
 
 - University of Illinois Urbana-Champaign -> 2023-Present
