@@ -27,7 +27,7 @@ disable_comments: true
     Graduate project for CS 444: Machine Learning for Computer Vision. Analysis of state-of-the-art work in
     Optical Music Recognition (OMR) with respect to several digital music notation formats. LilyPond is deemed to be a reasonable format for use in OMR given its current structure and underlying functionality for batch exporting. 
 
-# Nearest Neighbor Classication for Classical Image Upsampling
+# Nearest Neighbor Classification for Classical Image Upsampling
 
 - <b>Year:</b> November - December 2023
 - <b>Collaborator:</b> Nic Prate
