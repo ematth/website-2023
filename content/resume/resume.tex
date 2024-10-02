@@ -1,0 +1,224 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge Evan Matthews} \\ \vspace{1pt}
+    \small (309) 256-9709 $|$ \href{mailto:evanmm3@illinois.edu}{\underline{evanmm3@illinois.edu}} $|$ 
+    \href{https://ematth.dev}{\underline{ematth.dev}} $|$
+    \href{https://www.linkedin.com/in/ematth/}{\underline{linkedin.com/in/ematth/}} $|$
+    \href{https://github.com/ematth}{\underline{github.com/ematth}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Illinois Urbana-Champaign}{August 2023 -- Present}
+      {M.S. in Computer Science}{}
+      \resumeItemListStart
+        \resumeItem{Thesis Advisor: Paris Smaragdis}
+        \resumeItem{Topic: Audio Generation Improvement through Text Recaptioning}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {University of Illinois Urbana-Champaign}{August 2019 - May 2023}
+      {B.S. in Computer Science + Music}{GPA: 3.76/4.00}
+      \resumeItemListStart
+        \resumeItem{FAA James Scholar $|$ Dean's List: Fall 2019, Spring 2020, Spring 2021}
+        \resumeItem{Relevant coursework: Algorithms \& Models of Computation, Artificial Intelligence, Computation and Music, Electroacoustic Techniques, Systems Architecture, Data Structures, Database Systems}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Research Experience}
+    \resumeSubHeadingListStart
+
+    \resumeSubheading
+          {Bayesian Grading: Analysis of Scores in the Context of Cheating}{May 2024}
+          {Co-Authors: Victor Zhao, Yuxuan Chen $|$ Advisor: Craig Zilles}{}
+          \resumeItemListStart
+            \resumeItem{Probabilistic analysis of student grade trustworthiness, given proctored, unproctored exam scores}
+            % \resumeItem{Final project for CS 500, under C. Zilles}
+          \resumeItemListEnd
+    \resumeSubheading
+          {Nearest Neighbor Classication for Classical Image Upsampling}{December 2023}
+          {Co-Author: Nicolas Prate}{}
+          \resumeItemListStart
+            \resumeItem{KNN Interpolation, Dynamic-Ratio and Selective Upsampling to compete with ML methods}
+            % \resumeItem{Final project for CS 545, under P. Smaragdis}
+          \resumeItemListEnd
+          
+    \resumeSubheading
+          {Transcribing Monophonic Audio with Deep-Learning Data}{May 2023}
+          {Co-Author: Kevin Zhou $|$ Advisor: Zuofu Cheng}{}
+          \resumeItemListStart
+            \resumeItem{Senior Capstone project: develop models to transcribe audio recordings directly into sheet music}
+          \resumeItemListEnd
+    
+    % \resumeSubheading
+    %   {DISSCO}{September 2021 -- May 2022}
+    %   {C++, Linux $|$ Advisor: Sever Tipei}{}
+    %   \resumeItemListStart
+    %     \resumeItem{NCSA/UIUC I-School server-based software for composing stochastic computer music}
+    %     \resumeItem{Primary software for INFO 490: Computer Music}
+    %   \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {Teaching Assistant}{January 2021 -- Present}
+      {Graduate, Undergraduate}{Champaign, IL}
+    \resumeItemListStart
+        \resumeItem{CS 545: Machine Learning for Signal Processing $|$ M. Kim (FA 2024)}
+        \resumeItem{CS 448: Audio Computing Laboratory $|$ P. Smaragdis (SP 2024)}
+        \resumeItem{CS 340: Intro to Computer Systems $|$ C. Evans (FA 2023)}
+        \resumeItem{ECE 402: Electronic Music Synthesis $|$ Z. Cheng (FA 2022), L. Haken (SP 2021)}
+    \resumeItemListEnd
+        
+    \resumeSubheading
+    {Intern}{November 2021 -- August 2022}
+      {Haken Audio $|$ Manager: Lippold Haken}{Champaign, IL}
+      \resumeItemListStart
+        \resumeItem{Produced and debugged state-of-the-art MIDI keyboards and controllers}
+        \resumeItem{Received additional training with SHARC audio processors, DSP concepts, MIDI and MIDI controllers}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Math Tutor}{June 2023 -- May 2024}
+      {Illinois Tutoring Initiative $|$ Illinois State University}{Remote}
+      \resumeItemListStart
+        \resumeItem{Assist and mentor ninth-grade students virtually in Alegbra I, Geometry}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% LEADERSHIP EXPERIENCE
+%----------------------------
+\section{Leadership Experience}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Association for Computing Machinery, UIUC Chapter}}{August 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Chair, \textit{SIGMusic} $|$ August 2023 -- Present}
+            \resumeItem{Treasurer $|$ May 2022 -- May 2023}
+            \resumeItem{Chair, Social Committee $|$ August 2021 -- May 2022}
+          \resumeItemListEnd
+      % \resumeProjectHeading
+      %     {\textbf{Treasurer} $|$ \emph{Association for Computing Machinery}}{March 2022 -- March 2023}
+      %     \resumeItemListStart
+      %       \resumeItem{Managing all chapter finances, debts and sponsorships}
+      %       \resumeItem{Financial advisor to HackIllinois and Reflections $|$ Projections}
+      %       \resumeItem{Leading long-term renovation of ACM's club room}
+      %     \resumeItemListEnd
+      % \resumeProjectHeading
+      %     {\textbf{Member} $|$ \emph{School of Music Advisory Board; Director: Jeffrey S. Sposato}}{September 2021 -- May 2023}
+      %     \resumeItemListStart
+      %       \resumeItem{Represented CS + Music and music technology undergraduate students in\\ decisions and recommendations towards the School of Music}
+      %     \resumeItemListEnd\textbf{}
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, Java, Rust, OCaml, SQL, TeX/LaTeX, Bend} \\
+     \textbf{Frameworks}{: Flask, JUCE, Hugo} \\
+     \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, VS Code, Zed, PyCharm, IntelliJ} \\
+     \textbf{Packages}{: NumPy, SciPy, Matplotlib, PyTorch, Scikit-Learn, Pandas, GDB, Music21}
+    }}
+ \end{itemize}
+
+\textit{(Updated 10/02/24)}
+
+%-------------------------------------------
+\end{document}

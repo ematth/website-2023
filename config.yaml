@@ -31,7 +31,7 @@ menu:
       url: "ssl/"
       weight: 6
     - name: Resume
-      url: "files/Matthews_Resume.pdf"
+      url: "resume/resume.pdf"
       weight: 99
     # - name: Categories
     #   url: "categories/"
