@@ -5,7 +5,7 @@ disable_comments: true
 ---
 
 
-<img src="img/profile2.png" style="max-width:20%;min-width:40px;float:right; border-radius:50%;" alt="picture" />
+<img src="img/profile3.jpg" style="max-width:30%;min-width:40px;float:right; border-radius:50%;" alt="picture" />
 
 # Evan Matthews
 

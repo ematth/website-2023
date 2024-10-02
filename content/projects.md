@@ -3,14 +3,22 @@ title: Projects
 disable_comments: true
 ---
 
-> **Note:**
-> Code for some projects on this list cannot be shared publicly because doing so would be a violation of UIUC's policies on [Academic Integrity.](https://provost.illinois.edu/policies/policies/academic-integrity/students-quick-reference-guide-to-academic-integrity/)
+***
+## <i>Graduate</i>
+***
+
+# MS Thesis: Text-to-Audio Generation Improvement through Text Recaptioning
+
+- <b>Year:</b> Present (<i>in progress!</i>)
+- <b>Advisor:</b> [Paris Smaragdis](https://paris.cs.illinois.edu)
+
+    I am actively working on my thesis as part of the MS CS program at UIUC, for a deposit deadline of early May 2025.
 
 # A Case for Bayesian Grading
 
 - <b>Year:</b> May 2024
 - <b>Collaborators:</b> Yuxuan Chen, Victor Zhao
-- <b>Advisor:</b> Craig B. Zilles, Matthew West
+- <b>Advisors:</b> [Craig B. Zilles](https://zilles.cs.illinois.edu/), [Matthew West](https://lagrange.mechse.illinois.edu/)
 - <b>Tools:</b> Python, Jupyter Notebook
 
     Research project for CS 500: Topics in Computer Education Research. Simulating student grades
@@ -20,7 +28,7 @@ disable_comments: true
 # Optical Music Recognition for LilyPond File Generation
 
 - <b>Year:</b> May 2024
-- <b>Professor:</b> Svetlana Lazebnik
+- <b>Professor:</b> [Svetlana Lazebnik](https://grainger.illinois.edu/about/directory/faculty/slazebni)
 - <b>Tools:</b> Python, Jupyter Notebook
 - <b>[Paper](/files/cs444-report.pdf)</b>
 
@@ -31,7 +39,7 @@ disable_comments: true
 
 - <b>Year:</b> November - December 2023
 - <b>Collaborator:</b> Nic Prate
-- <b>Professor:</b> Paris Smaragdis
+- <b>Professor:</b> [Paris Smaragdis](https://paris.cs.illinois.edu)
 - <b>Tools:</b> Python, Jupyter Notebook
 - <b>[Github](https://github.com/ematth/KNN-Classical-Upsampling)</b>
 
@@ -45,10 +53,15 @@ disable_comments: true
 
     Built with [Hugo](https://gohugo.io/) and designed using the [XMIN](https://xmin.yihui.org/) theme. Read more about my journey through web development [here](/note/how-i-made-this-website/).
 
+***
+## <i>Undergraduate</i>
+***
+
+
 # Senior Capstone: Transcribing Monophonic Audio with Deep-Learning Data
 
 - <b>Year:</b> Spring 2023
-- <b>Advisor:</b> Zuofu Cheng
+- <b>Advisor:</b> [Zuofu Cheng](https://ece.illinois.edu/about/directory/faculty/zcheng1)
 - <b>Tools:</b> MIDI/MusicXML, MuseScore, Python
 - <b>[Website](https://singsong.gatsbyjs.io/), [Presentation](/files/capstone.pdf)</b>
 
@@ -63,7 +76,7 @@ disable_comments: true
 
 # DISSCO
 - <b>Year:</b> Fall 2021 - Spring 2022
-- <b>Director:</b> Sever Tipei
+- <b>Director:</b> [Sever Tipei](https://music.illinois.edu/people/profiles/sever-tipei/)
 - <b>Collaborators:</b> Tejus Kurdukar
 - <b>Tools:</b> C++
 - <b>[Github](https://github.com/tipei/DISSCO-2.0.2), [Website](https://cmp.ischool.illinois.edu/software/dissco/index.php)</b>
@@ -72,7 +85,7 @@ disable_comments: true
 
 # Disklavier Echo Effect
 - <b>Year:</b> Fall 2021 - Spring 2022
-- <b>Director:</b> Heinrich Taube
+- <b>Director:</b> [Heinrich Taube](https://music.illinois.edu/people/profiles/heinrich-taube/)
 - <b>Tools:</b> Python, [rtmidi](https://pypi.org/project/python-rtmidi/), [musx](https://github.com/musx-admin/musx) 
 - <b>[Github](https://github.com/evanmm3/Disklavier-Echo-Effect)</b>
 
