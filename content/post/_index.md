@@ -1,5 +1,5 @@
 ---
-title: Updates
+title: Professional Updates
 enable_python: false
 ---
 
