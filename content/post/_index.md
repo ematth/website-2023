@@ -1,10 +1,6 @@
 ---
-title: Audio Processing
+title: Updates
 enable_python: false
 ---
 
 <hr>
-
-[**References and Citations**](../references/)
-
-# Articles

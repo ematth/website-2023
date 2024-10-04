@@ -1,8 +1,6 @@
 ---
 title: "Fourier Transform"
 date: '2023-07-04'
-categories:
-  - Audio Processing
 tags:
   - Python
 draft: false

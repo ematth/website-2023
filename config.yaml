@@ -18,21 +18,18 @@ menu:
     - name: About
       url: "about/"
       weight: 2
-    - name: Projects
-      url: "projects/"
-      weight: 3
-    - name: Blog
-      url: "note/"
-      weight: 4
-    - name: Audio Processing
+    - name: Updates
       url: "post/"
+      weight: 4
+    - name: Personal Blog
+      url: "note/"
       weight: 5
-    - name: Sample Song Library
-      url: "ssl/"
-      weight: 6
+    # - name: Sample Song Library
+    #   url: "ssl/"
+    #   weight: 6
     - name: Resume
       url: "resume/resume.pdf"
-      weight: 99
+      weight: 3
     # - name: Categories
     #   url: "categories/"
     #   weight: 3

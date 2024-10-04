@@ -13,9 +13,9 @@ disable_comments: true
 
 <i>**Welcome to my website!**</i>
 
-All pages can be accessed from the menu in the website's header. This is where you can access my [personal blog](/note/), where you can read my fun educational posts on various topics. For detailed explanations about my academic field, check out [Audio Processing](/post/), where I will write tutorials on audio coding and processing in an easily-digestible format.
+You can access everything from the website header. You can learn more [about me](/about) or just read through my [resume](/resume/resume.pdf) and CV (*coming soon*). 
+You can also read my recent [professional updates](/post/) or check out my [personal blog](/note/) with my non-academic writings. 
 
 <hr>
 
 ### Recent Updates:
-
