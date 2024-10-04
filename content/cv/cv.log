@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.21)  4 OCT 2024 15:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.21)  4 OCT 2024 15:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -903,17 +903,18 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 202.
-LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <9> not available
-(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 320.
  [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <9> not available
+(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 347.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 342.
+(hyperref)                removing `\hfill' on input line 369.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 349.
+Package hyperref Warning: Suppressing link with empty target on input line 376.
 
 [2] [3] (./cv.aux)
  ***********
@@ -924,18 +925,18 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: 47435CE0C61F489A72C94624C8EAA737;2076.
  ) 
 Here is how much of TeX's memory you used:
- 33000 strings out of 474116
- 663249 string characters out of 5743682
- 1959187 words of memory out of 5000000
- 54769 multiletter control sequences out of 15000+600000
- 608799 words of font info for 88 fonts, out of 8000000 for 9000
+ 32998 strings out of 474116
+ 663224 string characters out of 5743682
+ 1957187 words of memory out of 5000000
+ 54768 multiletter control sequences out of 15000+600000
+ 605633 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 93i,11n,99p,572b,659s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,11n,99p,572b,681s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on cv.pdf (3 pages, 113052 bytes).
+Output written on cv.pdf (3 pages, 114944 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
+ 175 PDF objects out of 1000 (max. 8388607)
+ 130 compressed objects within 2 object streams
  20 named destinations out of 1000 (max. 500000)
  261 words of extra memory for PDF output out of 10000 (max. 10000000)
 
