@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1728074345.38287 "/Users/ematth/Documents/website/content/cv/cv.tex" "cv.pdf" "cv" 1728074347.01961 0
-  "/Users/ematth/Documents/website/content/cv/cv.tex" 1728074345.10808 21680 7bd7e3e29115464118c308bef973dc93 ""
+["pdflatex"] 1728597499.86343 "/Users/ematth/Documents/website/content/cv/cv.tex" "cv.pdf" "cv" 1728597501.30853 0
+  "/Users/ematth/Documents/website/content/cv/cv.tex" 1728597499.60498 21754 29c28655ba1371532f55c9da579f4972 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1622837620 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
@@ -238,9 +238,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1713709439.39188 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1713709407 8221420 39a9a86bbfa123cd48355616e9de8144 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "cv.aux" 1728074346.81682 1908 968b75ac51e16cd866ebdce1d04936b2 "pdflatex"
-  "cv.out" 1728074346.81776 2076 47435ce0c61f489a72c94624c8eaa737 "pdflatex"
-  "cv.tex" 1728074345.10808 21680 7bd7e3e29115464118c308bef973dc93 ""
+  "cv.aux" 1728597501.12941 1908 968b75ac51e16cd866ebdce1d04936b2 "pdflatex"
+  "cv.out" 1728597501.13032 2076 47435ce0c61f489a72c94624c8eaa737 "pdflatex"
+  "cv.tex" 1728597499.60498 21754 29c28655ba1371532f55c9da579f4972 ""
   (generated)
   "cv.aux"
   "cv.log"
