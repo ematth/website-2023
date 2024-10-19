@@ -7,7 +7,7 @@ disable_comments: true
 
 <img src="img/profile3.jpg" style="max-width:30%;min-width:40px;float:right; border-radius:50%;" alt="picture" />
 
-# Evan Matthews
+# Evan Michael Matthews
 
 <img src="graph.png" style="max-width:500px;max-height:500px" />
 

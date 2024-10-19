@@ -7,7 +7,7 @@ disable_python: true
 
 <img src="/img/aboutpic.JPG" alt="Picture of Evan Matthews" width=800 height=550>
 
-**Evan Matthews** is a computer science graduate student at the University of Illinois Urbana-Champaign. His research focuses on audio computing and AI/ML, more specifically the improvement of AI audio generation and lossless translation between sheet music and audio. He is a member of the UIUC CS Audio Lab, under thesis advising from [Paris Smaragdis](https://paris.cs.illinois.edu) and additional research guidance from [Minje Kim](https://minjekim.com/).
+**Evan Michael Matthews** is a masters student in computer science at the University of Illinois Urbana-Champaign. His research focuses on audio computing and AI/ML, more specifically the improvement of AI audio generation and lossless translation between sheet music and audio. He is a member of the CS Audio Lab, under thesis advising from [Paris Smaragdis](https://paris.cs.illinois.edu) and additional research guidance from [Minje Kim](https://minjekim.com/).
 
 Evan picked up interests in music when he began learning to play piano and clarinet at age 12. 
 In high school, he participated in the MTHS Wind Ensemble, which performed at the Illinois SuperState Concert Band Festival (2016, 2018, 2019), the Chicago Field Museum (2016), and the Illinois Music Education Conference (2019). He also took second place in the 2018 and 2019 ILMEA Composition Tracks for his solo piano works, and performed with the 2019 ILMEA All-State Band on clarinet. 
@@ -44,7 +44,7 @@ Evan continued composing as an undergraduate student at the University of Illino
 ## A Case for Bayesian Grading
 
 - <b>Year:</b> May 2024
-- <b>Collaborators:</b> Yuxuan Chen, Victor Zhao
+- <b>Collaborators:</b> Yuxuan Chen, Chenyan (Victor) Zhao
 - <b>Advisors:</b> [Craig B. Zilles](https://zilles.cs.illinois.edu/), [Matthew West](https://lagrange.mechse.illinois.edu/)
 - <b>Tools:</b> Python, Jupyter Notebook
 
