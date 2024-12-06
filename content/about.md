@@ -46,6 +46,7 @@ Evan continued composing as an undergraduate student at the University of Illino
 - <b>Year:</b> May 2024
 - <b>Collaborators:</b> Yuxuan Chen, Chenyan (Victor) Zhao
 - <b>Advisors:</b> [Craig B. Zilles](https://zilles.cs.illinois.edu/), [Matthew West](https://lagrange.mechse.illinois.edu/)
+- <b>Link:</b> [A Case for Bayesian Grading](https://doi.acm.org?doi=3649165.3703624)
 - <b>Tools:</b> Python, Jupyter Notebook
 
     Research project for CS 500: Topics in Computer Education Research. Simulating student grades
