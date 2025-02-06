@@ -2,55 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Evan Matthews</title>
-    <link>https://ematth.dev/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Evan Matthews</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python</title>
-      <link>https://ematth.dev/tags/python/</link>
-      <pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ematth.dev/tags/python/</guid>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>latex</title>
-      <link>https://ematth.dev/tags/latex/</link>
+      <title>Latex</title>
+      <link>http://localhost:1313/tags/latex/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ematth.dev/tags/latex/</guid>
+      <guid>http://localhost:1313/tags/latex/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>markdown</title>
-      <link>https://ematth.dev/tags/markdown/</link>
+      <title>Markdown</title>
+      <link>http://localhost:1313/tags/markdown/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ematth.dev/tags/markdown/</guid>
+      <guid>http://localhost:1313/tags/markdown/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>css</title>
-      <link>https://ematth.dev/tags/css/</link>
+      <title>Css</title>
+      <link>http://localhost:1313/tags/css/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ematth.dev/tags/css/</guid>
+      <guid>http://localhost:1313/tags/css/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>html</title>
-      <link>https://ematth.dev/tags/html/</link>
+      <title>Html</title>
+      <link>http://localhost:1313/tags/html/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ematth.dev/tags/html/</guid>
+      <guid>http://localhost:1313/tags/html/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

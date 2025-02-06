@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>How I Made this Website | Evan Matthews</title>
@@ -26,13 +26,13 @@
       
       <li><a href="/about/">About</a></li>
       
-      <li><a href="/projects/">Projects</a></li>
+      <li><a href="/resume/resume.pdf">Resume</a></li>
       
-      <li><a href="/note/">Blog</a></li>
+      <li><a href="/cv/cv.pdf">CV</a></li>
       
-      <li><a href="/post/">Audio Processing</a></li>
+      <li><a href="/post/">Updates</a></li>
       
-      <li><a href="/Matthews_Resume_Fall2023.pdf">Resume</a></li>
+      <li><a href="/note/">Personal Blog</a></li>
       
     </ul>
     <hr/>
@@ -46,8 +46,7 @@
 
 <main>
 <blockquote>
-<p>⚠️ This article assumes you have a decent understanding about console commands and Git.</p>
-</blockquote>
+<p>⚠️ This article assumes you have a decent understanding about console commands and Git.</p></blockquote>
 <h1 id="introduction">Introduction</h1>
 <p>I have something rather important to get off my chest:</p>
 <pre><code>I don't like web dev.
@@ -96,8 +95,7 @@ cd &lt;site-folder&gt;
 <pre><code>(User/website/content:) hugo new &lt;page-name&gt;.md
 </code></pre>
 <blockquote>
-<p>Side note: markdown offers a number of tags for organizing or describing your pages. In particular, make sure <code>draft</code> is set to <strong>false</strong> when you&rsquo;re ready to publish your website, (otherwise your pages won&rsquo;t appear on the published site.)</p>
-</blockquote>
+<p>Side note: markdown offers a number of tags for organizing or describing your pages. In particular, make sure <code>draft</code> is set to <strong>false</strong> when you&rsquo;re ready to publish your website, (otherwise your pages won&rsquo;t appear on the published site.)</p></blockquote>
 <p>As you&rsquo;re making your website&rsquo;s pages, you&rsquo;ll likely want to check what the pages will look like in real-time. This can be done with:</p>
 <pre><code>(User/website:) hugo server
 </code></pre>
@@ -125,17 +123,14 @@ Pushing changes to your <username>.github.io repository will <strong>not</strong
 <pre><code>  (User/website:) cd themes/&lt;theme-name&gt; 
   (User/themes/&lt;theme-name&gt;:) git push origin main
 </code></pre>
-<p>where items in parentheses simply show where in your directory the commands take place. As you&rsquo;ve done <a href="">here</a>, this <code>git push</code> will update your forked repository with the changes you wanted deployed to the <i>theme</i> of your site.</p>
-</blockquote>
+<p>where items in parentheses simply show where in your directory the commands take place. As you&rsquo;ve done <a href="">here</a>, this <code>git push</code> will update your forked repository with the changes you wanted deployed to the <i>theme</i> of your site.</p></blockquote>
 <blockquote>
-<p><strong>Note #2:</strong> The above is not the only way to push your website code to Github, but regardless, your repository on Github <strong>must</strong> be named <code>&lt;username.github.io&gt;</code> in order for Github Pages to work.</p>
-</blockquote>
+<p><strong>Note #2:</strong> The above is not the only way to push your website code to Github, but regardless, your repository on Github <strong>must</strong> be named <code>&lt;username.github.io&gt;</code> in order for Github Pages to work.</p></blockquote>
 <blockquote>
 <p><strong>Note #3:</strong> Did you remember to call</p>
 <pre><code>  (User/website:) hugo
 </code></pre>
-<p>before pushing your site code to Github?</p>
-</blockquote>
+<p>before pushing your site code to Github?</p></blockquote>
 <ol start="2">
 <li><strong>Deployment</strong>: Head over to <code>https://github.com/&lt;username&gt;/&lt;username&gt;.github.io/actions</code> and create a <strong>new workflow</strong>. You&rsquo;ll want to pick the <strong>static HTML</strong> preset, then while configuring the file:
 <ul>
@@ -169,40 +164,40 @@ Pushing changes to your <username>.github.io repository will <strong>not</strong
 <li>
 <p>Wherever you choose to purchase your custom domain, head to your <code>DNS Records/Settings</code>, and add the following records:</p>
 <table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Name</th>
-<th>Data</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>@</td>
-<td>185.199.108.153</td>
-</tr>
-<tr>
-<td>A</td>
-<td>@</td>
-<td>185.199.109.153</td>
-</tr>
-<tr>
-<td>A</td>
-<td>@</td>
-<td>185.199.110.153</td>
-</tr>
-<tr>
-<td>A</td>
-<td>@</td>
-<td>185.199.111.153</td>
-</tr>
-<tr>
-<td>CNAME</td>
-<td>www</td>
-<td><code>&lt;username&gt;.github.io</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Name</th>
+          <th>Data</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>A</td>
+          <td>@</td>
+          <td>185.199.108.153</td>
+      </tr>
+      <tr>
+          <td>A</td>
+          <td>@</td>
+          <td>185.199.109.153</td>
+      </tr>
+      <tr>
+          <td>A</td>
+          <td>@</td>
+          <td>185.199.110.153</td>
+      </tr>
+      <tr>
+          <td>A</td>
+          <td>@</td>
+          <td>185.199.111.153</td>
+      </tr>
+      <tr>
+          <td>CNAME</td>
+          <td>www</td>
+          <td><code>&lt;username&gt;.github.io</code></td>
+      </tr>
+  </tbody>
 </table>
  <img src="dnsgh.png" alt="DNS Type A records" width=800 height=300>
  <img src="dnscname.png" alt="DNS Type A records" width=800 height=70>
@@ -219,31 +214,7 @@ Pushing changes to your <username>.github.io repository will <strong>not</strong
 </main>
 
   <footer>
-  
-<section id="comments">
-    <div id="disqus_thread"></div>
-    <script>
-    var disqus_config = function () {
-    
-    };
-    (function() {
-      var inIFrame = function() {
-        var iframe = true;
-        try { iframe = window.self !== window.top; } catch (e) {}
-        return iframe;
-      };
-      if (inIFrame()) return;
-      var d = document, s = d.createElement('script');
-      s.src = '//ematth.disqus.com/embed.js'; s.async = true;
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </section>
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
 
 
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"></script>
@@ -264,7 +235,7 @@ Pushing changes to your <username>.github.io repository will <strong>not</strong
 </script>
   
   <hr/>
-  © Evan Matthews 2023 | <a href="https://github.com/evanmm3">Github</a> | <a href="https://www.linkedin.com/in/ematth/">LinkedIn</a>
+  © Evan Matthews 2025 | <a href="https://github.com/evanmm3">Github</a> | <a href="https://www.linkedin.com/in/ematth/">LinkedIn</a>
   
   </footer>
   </body>

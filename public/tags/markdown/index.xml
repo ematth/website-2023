@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>markdown on Evan Matthews</title>
-    <link>https://ematth.dev/tags/markdown/</link>
-    <description>Recent content in markdown on Evan Matthews</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Markdown on Evan Matthews</title>
+    <link>http://localhost:1313/tags/markdown/</link>
+    <description>Recent content in Markdown on Evan Matthews</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LaTeX for Note-Taking</title>
-      <link>https://ematth.dev/note/latex-for-note-taking/</link>
+      <link>http://localhost:1313/post/2023/06/03/latex-for-note-taking/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ematth.dev/note/latex-for-note-taking/</guid>
-      <description>$\LaTeX$ LaTeX, pronounced &amp;ldquo;lah-tech&amp;rdquo; or &amp;ldquo;lay-tech&amp;rdquo;, is a typesetting system based on the TeX language. It was developed in 1985 by American computer scientist Leslie Lamport, who wrote the package due to his frequent use of shortcuts for mathematical and scientific symbols in his own writing. Since then, it has become a staple in the world of academia as one of the premier document-writing tools with numerous integrations and extensions to the LaTeX package.</description>
+      <guid>http://localhost:1313/post/2023/06/03/latex-for-note-taking/</guid>
+      <description>&lt;h1 id=&#34;latex&#34;&gt;$\LaTeX$&lt;/h1&gt;&#xA;&lt;p&gt;LaTeX, pronounced &amp;ldquo;lah-tech&amp;rdquo; or &amp;ldquo;lay-tech&amp;rdquo;, is a typesetting system based on the TeX language. It was developed in 1985 by American computer scientist Leslie Lamport, who wrote the package due to his frequent use of shortcuts for mathematical and scientific symbols in his own writing. Since then, it has become a staple in the world of academia as one of the premier document-writing tools with numerous integrations and extensions to the LaTeX package.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>How I Made this Website</title>
-      <link>https://ematth.dev/note/how-i-made-this-website/</link>
+      <link>http://localhost:1313/note/how-i-made-this-website/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ematth.dev/note/how-i-made-this-website/</guid>
-      <description>⚠️ This article assumes you have a decent understanding about console commands and Git.
-Introduction I have something rather important to get off my chest:
-I don&#39;t like web dev. There, I said it. I&#39;ve used plenty of tools in the past, including HTML, CSS and Javascript, yet the idea of making websites never truly stuck. To me, there was always an additional layer of complication that I could never get around.</description>
+      <guid>http://localhost:1313/note/how-i-made-this-website/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;⚠️ This article assumes you have a decent understanding about console commands and Git.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;I have something rather important to get off my chest:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;I don&#39;t like web dev.&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;There, I said it. I&#39;ve used plenty of tools in the past, including HTML, CSS and Javascript, yet the idea of making websites never truly stuck. To me, there was always an additional layer of complication that I could never get around. However, there are plenty of tools nowadays that get around the tedium of having to type an endless amount of style and formatting code to make a nice-looking website. This article will hopefully introduce you to a number of tools I&#39;ve been using to make this website and will hopefully stop you from having to touch &lt;i&gt;javascript&lt;/i&gt; 🤮 or do any actual web programming.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

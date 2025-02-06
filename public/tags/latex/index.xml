@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>latex on Evan Matthews</title>
-    <link>https://ematth.dev/tags/latex/</link>
-    <description>Recent content in latex on Evan Matthews</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Latex on Evan Matthews</title>
+    <link>http://localhost:1313/tags/latex/</link>
+    <description>Recent content in Latex on Evan Matthews</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LaTeX for Note-Taking</title>
-      <link>https://ematth.dev/note/latex-for-note-taking/</link>
+      <link>http://localhost:1313/post/2023/06/03/latex-for-note-taking/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ematth.dev/note/latex-for-note-taking/</guid>
-      <description>$\LaTeX$ LaTeX, pronounced &amp;ldquo;lah-tech&amp;rdquo; or &amp;ldquo;lay-tech&amp;rdquo;, is a typesetting system based on the TeX language. It was developed in 1985 by American computer scientist Leslie Lamport, who wrote the package due to his frequent use of shortcuts for mathematical and scientific symbols in his own writing. Since then, it has become a staple in the world of academia as one of the premier document-writing tools with numerous integrations and extensions to the LaTeX package.</description>
+      <guid>http://localhost:1313/post/2023/06/03/latex-for-note-taking/</guid>
+      <description>&lt;h1 id=&#34;latex&#34;&gt;$\LaTeX$&lt;/h1&gt;&#xA;&lt;p&gt;LaTeX, pronounced &amp;ldquo;lah-tech&amp;rdquo; or &amp;ldquo;lay-tech&amp;rdquo;, is a typesetting system based on the TeX language. It was developed in 1985 by American computer scientist Leslie Lamport, who wrote the package due to his frequent use of shortcuts for mathematical and scientific symbols in his own writing. Since then, it has become a staple in the world of academia as one of the premier document-writing tools with numerous integrations and extensions to the LaTeX package.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

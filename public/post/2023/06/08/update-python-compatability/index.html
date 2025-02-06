@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Updates | Evan Matthews</title>
+    <title>Update: Python Compatability | Evan Matthews</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
@@ -15,6 +15,8 @@
 <meta name="theme-color" content="#ffffff">
 
 
+
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
 
   </head>
 
@@ -38,28 +40,41 @@
     <hr/>
     </nav>
 
+<div class="article-meta">
+<h1><span class="title">Update: Python Compatability</span></h1>
 
+<h2 class="date">2023/06/08</h2>
+</div>
 
-<h1>Updates</h1>
+<main>
+<!-- Py-Config header -->
+<head>
+<py-config hidden src="pyconfig.toml">
+[[fetch]]
+files = ["./updatecode.py", "./reunion.wav"]
+</py-config>
+</head>
+<!-- Content -->
+<p>Hey everyone,</p>
+<p>My website now has support for Python code using <a href="https://pyscript.net/">PyScript</a>! This means that, on top of formatting code for LaTeX formulas&hellip;</p>
+<pre><code class="language-python">    sr1, sample1 = wavread('./reunion.wav')
+    sample1 = sample1[:int(len(sample1)/4)]
+    figure, axs = plt.subplots(1,2)
+    figure.set_size_inches(18, 8)
+    figure.suptitle(&quot;Chopin Op.28 No. 1 \&quot;Reunion\&quot;&quot;)
+    axs[0].plot(sample1); axs[0].set_title(&quot;Waveform&quot;)
+    a = spectrogram(axs[1], sample1, sr1)
+    display(figure, target=&quot;plot&quot;)
+</code></pre>
+<audio controls>
+<source alt="Chopin's Op. 28 No. 1" src="reunion.wav" type="audio/wav">
+</audio>
+<div id="plot"></div>
+<py-script src="updatecode.py"></py-script>
+<p>&hellip;my website can now show implementations of formulas and display and plot code output! I hope to start using this feature for my future <strong>Audio Processing</strong> articles by directly implementing Python code into the page. However, if it starts to take too long to load, I might just go back to the tried and true method of uploading screenshots of graphs.</p>
+<p><em>-Evan</em></p>
 
-
-
-
-<ul>
-  
-  
-  
-  <li>
-    <span class="date">06/08/2023</span>
-    <a href="/post/2023/06/08/update-python-compatability/">Update: Python Compatability</a>
-  </li>
-  
-  <li>
-    <span class="date">06/05/2023</span>
-    <a href="/post/2023/06/05/update-comments-future-articles/">Update: Comments &amp; Future Articles</a>
-  </li>
-  
-</ul>
+</main>
 
   <footer>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">

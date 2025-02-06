@@ -2,19 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Audio Processing on Evan Matthews</title>
-    <link>https://ematth.dev/categories/audio-processing/</link>
+    <link>http://localhost:1313/categories/audio-processing/</link>
     <description>Recent content in Audio Processing on Evan Matthews</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/categories/audio-processing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/audio-processing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amplitude</title>
+      <link>http://localhost:1313/note/amplitude/</link>
+      <pubDate>Mon, 03 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/note/amplitude/</guid>
+      <description>&lt;h1 id=&#34;amplitude&#34;&gt;Amplitude&lt;/h1&gt;&#xA;&lt;p&gt;The &lt;strong&gt;amplitude&lt;/strong&gt; of a sound is physically defined as the amount of displacement produced by sound waves onto air particles. From the listener&amp;rsquo;s point of view, this variable represents the &amp;ldquo;volume&amp;rdquo; of the sound.&lt;/p&gt;&#xA;&lt;p&gt;$$S(t) = A\sin(\omega t + \phi)$$&lt;/p&gt;&#xA;&lt;p&gt;Given a sinusoidal function, we define $A$ to be our peak amplitude, or the highest volume that our sound reaches. That is, $\forall t \in \Reals, \space x(t) \in [-A, A] $, (for all inputs $t$, representing time in our sinusoidal function, $x(t)$ will always be between and include $-A$ and $A$).&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Waveforms and Audio Basics</title>
-      <link>https://ematth.dev/post/2023/06/27/waveforms-and-audio-basics/</link>
-      <pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ematth.dev/post/2023/06/27/waveforms-and-audio-basics/</guid>
-      <description>[[fetch]] files = [&#34;./audio1.py&#34;] Introduction Understanding the mathematical logic behind sound- how certain factors effect what we hear and how we hear it- is the first step into audio signal processing. You should likely understand some basics about trigonometry and periodic functions to best understand the content. This article will run through basic vocabulary, explain how sound is processed and stored digitally, and demonstrate basic audio processing techniques in Python.</description>
+      <link>http://localhost:1313/note/waveforms-and-audio-basics/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/note/waveforms-and-audio-basics/</guid>
+      <description>&lt;!-- Py-Config header --&gt;&#xA;&lt;head&gt;&#xA;&lt;py-config hidden src=&#34;pyconfig.toml&#34;&gt;&#xA;[[fetch]]&#xA;files = [&#34;./audio1.py&#34;]&#xA;&lt;/py-config&gt;&#xA;&lt;/head&gt;&#xA;&lt;!-- Content --&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Understanding the mathematical logic behind sound- how certain factors effect what we hear and how we hear it- is the first step into audio signal processing. You should likely understand some basics about trigonometry and periodic functions to best understand the content. This article will run through basic vocabulary, explain how sound is processed and stored digitally, and demonstrate basic audio processing techniques in Python.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

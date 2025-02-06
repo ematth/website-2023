@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Other on Evan Matthews</title>
+    <link>http://localhost:1313/categories/other/</link>
+    <description>Recent content in Other on Evan Matthews</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/other/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Life updates</title>
+      <link>http://localhost:1313/post/2024/05/20/life-updates/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2024/05/20/life-updates/</guid>
+      <description>&lt;h1 id=&#34;life-updates&#34;&gt;Life updates&lt;/h1&gt;&#xA;&lt;p&gt;Wow, so I haven&amp;rsquo;t updated my blog in a while&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;My first year of grad school at UIUC has gone and went, and I&amp;rsquo;ve accomplished quite a bit since entering the MS CS program last fall.&lt;/p&gt;&#xA;&lt;p&gt;I wrote three research papers related to a variety of topics:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2403.19611&#34;&gt;&lt;em&gt;Nearest Neighbor Classication for Classical Image Upsampling&lt;/em&gt;&lt;/a&gt; with Nic Prate. We wrote this for a class on Machine Learning for Signal Processing in December 2023, and I was very excited to finally get a paper published (&lt;em&gt;and read by other researchers&lt;/em&gt;) on arXiv.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Barbenheimer Review</title>
+      <link>http://localhost:1313/note/barbenheimer-review/</link>
+      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/note/barbenheimer-review/</guid>
+      <description>&lt;h1 id=&#34;barbenheimer&#34;&gt;Barbenheimer&lt;/h1&gt;&#xA;&lt;img src=&#34;banner.webp&#34; alt=&#34;Source: NBC News&#34;&gt;&#xA;&lt;p&gt;Last Friday, I had the pleasure of participating in the &lt;em&gt;Barbenheimer&lt;/em&gt; craze, watching Greta Gerwig&amp;rsquo;s &lt;em&gt;Barbie&lt;/em&gt; and Christopher Nolan&amp;rsquo;s &lt;em&gt;Oppenheimer&lt;/em&gt;. While I don&amp;rsquo;t visit the movie theater often, I found this double feature to be tons of fun, so I&amp;rsquo;ve decided to give my reviews of both movies in the order that I saw them.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;barbie&#34;&gt;Barbie&lt;/h2&gt;&#xA;&lt;p&gt;I went into &lt;em&gt;Barbie&lt;/em&gt; with the understanding that I was certainly not the movie&amp;rsquo;s target audience and that a lot of material wouldn&amp;rsquo;t land with me or any of the other males in the theater. To my surprise, most of the humor resonated well with the entire audience, and the messages it conveyed stuck incredibly well. Margot Robbie is obviously a fantastic choice for Barbie, and I also thought Ryan Gosling does a fantastic job as Ken. I felt his role within the plot is incredibly well developed and helped to openly talk about topics that plenty of people wouldn&amp;rsquo;t actively discuss. I won&amp;rsquo;t spoil what happens, but a good portion of the movie centers around the pressures put on women by society, and the portrayal of Ken and other male characters helps in discussing the patriarchy in a more comedic setting. Rich and realistic context aside, &lt;em&gt;Barbie&lt;/em&gt; is not afraid of being goofy and making fun of its own franchise. The movie takes full advantage of its PG-13 swear limit and roasts Mattel&amp;rsquo;s long history of discontinued Barbie dolls, adding to the sense that this is more than just a Mattel product advertisement. Overall, &lt;em&gt;Barbie&lt;/em&gt; is a phenomenal comedy, and &lt;strong&gt;I greatly recommend it&lt;/strong&gt; if you&amp;rsquo;re willing to stare at the color pink for two hours.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

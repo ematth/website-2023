@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cool Python tidbits I enjoy using | Evan Matthews</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/resume/resume.pdf">Resume</a></li>
+      
+      <li><a href="/cv/cv.pdf">CV</a></li>
+      
+      <li><a href="/post/">Updates</a></li>
+      
+      <li><a href="/note/">Personal Blog</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Cool Python tidbits I enjoy using</span></h1>
+<h2 class="author">Evan Matthews</h2>
+<h2 class="date">2024/02/16</h2>
+</div>
+
+<main>
+<h1 id="semicolons">Semicolons</h1>
+<p>Languages such as Java and C/C++ used a <em>terminator</em> to indicate the end of a line of code- most often the <em>semicolon</em> ( ; ). While this is not a mandatory feature for Python, you can still use semicolons as line separators. I personally use semicolons to make the most out of horizontal space in my code by combing initialization lines or similar expressions.</p>
+<table>
+<tr>
+<td>
+<pre><code class="language-python">a = 1
+b = 3.14
+c = 'statement'
+d = False
+</code></pre>
+<td>
+<td>
+<pre><code class="language-python">a = 1; b = 3.14 # numbers
+c = 'statement' # strings
+d = False # bools
+</code></pre>
+<td>
+</tr>
+</table>
+<hr>
+<h1 id="ternary-operator">Ternary Operator</h1>
+<p>Have you ever felt like some if-else cases appear to use too many lines?</p>
+<pre><code class="language-python">x = 3; y = 4
+if x &lt; y:
+    return 0
+else:
+    return 1
+</code></pre>
+<p>Enter the <em>ternary operator</em>, a one-line method of the form <code>a if b else c</code>, where <code>b</code> is your condition,
+<code>a</code> is your expression for the condition returning true, and <code>c</code> is the value passed is the condition returns false.</p>
+<pre><code class="language-python">x = 3; y = 4
+z = 0 if x &lt; y else 1
+</code></pre>
+<p>Ternary operations can also be used as values inside other ternary operators!</p>
+<pre><code class="language-python">x = 3; y = 4
+s = &quot;equal&quot; if x == y else &quot;less than&quot; if x &lt; y else &quot;greater than&quot;
+print(s)
+</code></pre>
+<hr>
+<h1 id="type-hints-and-annotations">Type Hints and Annotations</h1>
+<pre><code class="language-python">def func(a: int, b: int = 1) -&gt; int:
+    return a + b - 5
+</code></pre>
+<pre><code class="language-python">def func(a: &quot;fun value&quot;, b: &quot;also a fun value&quot; = 1) -&gt; &quot;sum of fun values&quot;:
+    return a + b - 5
+</code></pre>
+<p>You can access the annotations by calling <code>func.__annotations__</code>, which returns the list of annotations in order.</p>
+<hr>
+<h1 id="decorators">Decorators</h1>
+<pre><code class="language-python">def decorator(func):
+    def wrapper(*args, **kwargs):
+        # decorator function code
+        pass
+return wrapper(*args, **kwargs)
+
+@decorator
+def func(x):
+    return x + 1
+</code></pre>
+<hr>
+<h1 id="colon-equals-operator-">Colon-Equals Operator (:=)</h1>
+<p>Similar to equals (=), Colon-Equals (:=) allows you to assign values to variables, with the added benefit of being able to do this in expressions! This is especially helpful when you would otherwise calculate a value twice, (once for use in the expression, and once in the post-condition).</p>
+<pre><code class="language-python">def powers(x):
+    # This list includes the value f(x) while assigning it to the variable y
+    return [y := f(x), y**2, y**3, y**4]
+
+</code></pre>
+<hr>
+<h1 id="the-integer-cache">The Integer Cache</h1>
+<p>Did you know that Python maintains a list of pre-defined objects for integers in the range [-5, 256]?
+To everyone&rsquo;s surprise, this cache also comes with some quirks, especially if you do some comparisons at the edge of its range:</p>
+<pre><code class="language-python">&gt;&gt;&gt; a = 1
+&gt;&gt;&gt; b = 1
+&gt;&gt;&gt; a is b
+True
+
+&gt;&gt;&gt; a = 257
+&gt;&gt;&gt; b = 257
+&gt;&gt;&gt; a is b
+False
+</code></pre>
+<p>&hellip; unless you run the assignments and expression in-line with semi-colons, in which case the comparison works outside of the integer cache range.</p>
+<pre><code class="language-python">&gt;&gt;&gt; a = 257; b = 257; a is b
+True
+</code></pre>
+<hr>
+<h1 id="zip-and-enumerate">Zip and Enumerate</h1>
+<hr>
+<h1 id="string-multiplication">String multiplication</h1>
+<p>Strings in Python come with a lot of freedom compared to other programming langauges. There&rsquo;s a lot of cool
+tricks that most programmers already take advantage of, (treating strings as list for indexing, string addition), but you can also perform <em>string multiplication</em>. This feature allows you to perform a large number of string additions more efficiently.</p>
+<pre><code class="language-python">string_3 = 'string_' * 3
+print(string_3) # -&gt; 'string_string_string' 
+</code></pre>
+<hr>
+<h1 id="built-in-import-easter-eggs">Built-in Import Easter eggs</h1>
+<p>There&rsquo;s a few built-in imports with fun Easter eggs for the truly curious&hellip;</p>
+<p><code>import this</code> -&gt; prints 19 guiding principles for writing computer programs, by Tim Peters</p>
+<p><code>import antigravity</code> -&gt; directly links to an XKCD comic.</p>
+<hr>
+</main>
+
+  <footer>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+  
+  <hr/>
+  © Evan Matthews 2025 | <a href="https://github.com/evanmm3">Github</a> | <a href="https://www.linkedin.com/in/ematth/">LinkedIn</a>
+  
+  </footer>
+  </body>
+</html>
+

@@ -2,30 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coding on Evan Matthews</title>
-    <link>https://ematth.dev/categories/coding/</link>
+    <link>http://localhost:1313/categories/coding/</link>
     <description>Recent content in Coding on Evan Matthews</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ematth.dev/categories/coding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Life updates</title>
+      <link>http://localhost:1313/post/2024/05/20/life-updates/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2024/05/20/life-updates/</guid>
+      <description>&lt;h1 id=&#34;life-updates&#34;&gt;Life updates&lt;/h1&gt;&#xA;&lt;p&gt;Wow, so I haven&amp;rsquo;t updated my blog in a while&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;My first year of grad school at UIUC has gone and went, and I&amp;rsquo;ve accomplished quite a bit since entering the MS CS program last fall.&lt;/p&gt;&#xA;&lt;p&gt;I wrote three research papers related to a variety of topics:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2403.19611&#34;&gt;&lt;em&gt;Nearest Neighbor Classication for Classical Image Upsampling&lt;/em&gt;&lt;/a&gt; with Nic Prate. We wrote this for a class on Machine Learning for Signal Processing in December 2023, and I was very excited to finally get a paper published (&lt;em&gt;and read by other researchers&lt;/em&gt;) on arXiv.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cool Python tidbits I enjoy using</title>
+      <link>http://localhost:1313/note/cool-python-tidbits-i-enjoy-using/</link>
+      <pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/note/cool-python-tidbits-i-enjoy-using/</guid>
+      <description>&lt;h1 id=&#34;semicolons&#34;&gt;Semicolons&lt;/h1&gt;&#xA;&lt;p&gt;Languages such as Java and C/C++ used a &lt;em&gt;terminator&lt;/em&gt; to indicate the end of a line of code- most often the &lt;em&gt;semicolon&lt;/em&gt; ( ; ). While this is not a mandatory feature for Python, you can still use semicolons as line separators. I personally use semicolons to make the most out of horizontal space in my code by combing initialization lines or similar expressions.&lt;/p&gt;&#xA;&lt;table&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a = 1&#xA;b = 3.14&#xA;c = &#39;statement&#39;&#xA;d = False&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;td&gt;&#xA;&lt;td&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a = 1; b = 3.14 # numbers&#xA;c = &#39;statement&#39; # strings&#xA;d = False # bools&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;ternary-operator&#34;&gt;Ternary Operator&lt;/h1&gt;&#xA;&lt;p&gt;Have you ever felt like some if-else cases appear to use too many lines?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LaTeX for Note-Taking</title>
-      <link>https://ematth.dev/note/latex-for-note-taking/</link>
+      <link>http://localhost:1313/post/2023/06/03/latex-for-note-taking/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ematth.dev/note/latex-for-note-taking/</guid>
-      <description>$\LaTeX$ LaTeX, pronounced &amp;ldquo;lah-tech&amp;rdquo; or &amp;ldquo;lay-tech&amp;rdquo;, is a typesetting system based on the TeX language. It was developed in 1985 by American computer scientist Leslie Lamport, who wrote the package due to his frequent use of shortcuts for mathematical and scientific symbols in his own writing. Since then, it has become a staple in the world of academia as one of the premier document-writing tools with numerous integrations and extensions to the LaTeX package.</description>
+      <guid>http://localhost:1313/post/2023/06/03/latex-for-note-taking/</guid>
+      <description>&lt;h1 id=&#34;latex&#34;&gt;$\LaTeX$&lt;/h1&gt;&#xA;&lt;p&gt;LaTeX, pronounced &amp;ldquo;lah-tech&amp;rdquo; or &amp;ldquo;lay-tech&amp;rdquo;, is a typesetting system based on the TeX language. It was developed in 1985 by American computer scientist Leslie Lamport, who wrote the package due to his frequent use of shortcuts for mathematical and scientific symbols in his own writing. Since then, it has become a staple in the world of academia as one of the premier document-writing tools with numerous integrations and extensions to the LaTeX package.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>How I Made this Website</title>
-      <link>https://ematth.dev/note/how-i-made-this-website/</link>
+      <link>http://localhost:1313/note/how-i-made-this-website/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ematth.dev/note/how-i-made-this-website/</guid>
-      <description>⚠️ This article assumes you have a decent understanding about console commands and Git.
-Introduction I have something rather important to get off my chest:
-I don&#39;t like web dev. There, I said it. I&#39;ve used plenty of tools in the past, including HTML, CSS and Javascript, yet the idea of making websites never truly stuck. To me, there was always an additional layer of complication that I could never get around.</description>
+      <guid>http://localhost:1313/note/how-i-made-this-website/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;⚠️ This article assumes you have a decent understanding about console commands and Git.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;I have something rather important to get off my chest:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;I don&#39;t like web dev.&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;There, I said it. I&#39;ve used plenty of tools in the past, including HTML, CSS and Javascript, yet the idea of making websites never truly stuck. To me, there was always an additional layer of complication that I could never get around. However, there are plenty of tools nowadays that get around the tedium of having to type an endless amount of style and formatting code to make a nice-looking website. This article will hopefully introduce you to a number of tools I&#39;ve been using to make this website and will hopefully stop you from having to touch &lt;i&gt;javascript&lt;/i&gt; 🤮 or do any actual web programming.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
