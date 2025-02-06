@@ -13,7 +13,7 @@ disable_comments: true
 
 <i>**Welcome to my website!**</i>
 
-You can access everything from the website header. You can learn more [about me](/about) or just read through my [resume](/resume/resume.pdf) and CV (*coming soon*). 
+You can access everything from the website header. You can learn more [about me](/about) or just read through my [resume](/resume/resume.pdf) and [CV](/cv/cv.pdf). 
 You can also read my recent [professional updates](/post/) or check out my [personal blog](/note/) with my non-academic writings. 
 
 <hr>

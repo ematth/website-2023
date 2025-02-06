@@ -20,16 +20,19 @@ menu:
       weight: 2
     - name: Updates
       url: "post/"
-      weight: 4
+      weight: 5
     - name: Personal Blog
       url: "note/"
-      weight: 5
+      weight: 6
     # - name: Sample Song Library
     #   url: "ssl/"
     #   weight: 6
     - name: Resume
       url: "resume/resume.pdf"
       weight: 3
+    - name: CV
+      url: "cv/cv.pdf"
+      weight: 4
     # - name: Categories
     #   url: "categories/"
     #   weight: 3

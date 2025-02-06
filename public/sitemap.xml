@@ -2,62 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ematth.dev/categories/audio-processing/</loc>
-    <lastmod>2023-06-27T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2024-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ematth.dev/post/</loc>
-    <lastmod>2023-06-27T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/categories/coding/</loc>
+    <lastmod>2024-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ematth.dev/categories/</loc>
-    <lastmod>2023-06-27T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ematth.dev/</loc>
-    <lastmod>2023-06-27T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/post/2024/05/20/life-updates/</loc>
+    <lastmod>2024-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ematth.dev/tags/python/</loc>
-    <lastmod>2023-06-27T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/categories/other/</loc>
+    <lastmod>2024-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ematth.dev/tags/</loc>
-    <lastmod>2023-06-27T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2024-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ematth.dev/post/2023/06/27/waveforms-and-audio-basics/</loc>
-    <lastmod>2023-06-27T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/note/cool-python-tidbits-i-enjoy-using/</loc>
+    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ematth.dev/note/</loc>
+    <loc>http://localhost:1313/note/</loc>
+    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/note/barbenheimer-review/</loc>
+    <lastmod>2023-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/note/fourier-transform/</loc>
+    <lastmod>2023-07-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/note/amplitude/</loc>
+    <lastmod>2023-07-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/audio-processing/</loc>
+    <lastmod>2023-07-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/note/waveforms-and-audio-basics/</loc>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2023/06/08/update-python-compatability/</loc>
     <lastmod>2023-06-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ematth.dev/note/update-python-compatability/</loc>
+    <loc>http://localhost:1313/categories/updates/</loc>
     <lastmod>2023-06-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ematth.dev/categories/updates/</loc>
-    <lastmod>2023-06-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ematth.dev/note/update-comments-future-articles/</loc>
+    <loc>http://localhost:1313/post/2023/06/05/update-comments-future-articles/</loc>
     <lastmod>2023-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ematth.dev/categories/coding/</loc>
+    <loc>http://localhost:1313/tags/latex/</loc>
     <lastmod>2023-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ematth.dev/tags/latex/</loc>
+    <loc>http://localhost:1313/post/2023/06/03/latex-for-note-taking/</loc>
     <lastmod>2023-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ematth.dev/note/latex-for-note-taking/</loc>
+    <loc>http://localhost:1313/tags/markdown/</loc>
     <lastmod>2023-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ematth.dev/tags/markdown/</loc>
-    <lastmod>2023-06-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ematth.dev/tags/css/</loc>
+    <loc>http://localhost:1313/tags/css/</loc>
     <lastmod>2023-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ematth.dev/note/how-i-made-this-website/</loc>
+    <loc>http://localhost:1313/note/how-i-made-this-website/</loc>
     <lastmod>2023-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ematth.dev/tags/html/</loc>
+    <loc>http://localhost:1313/tags/html/</loc>
     <lastmod>2023-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ematth.dev/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>https://ematth.dev/projects/</loc>
+    <loc>http://localhost:1313/ssl/</loc>
+  </url><url>
+    <loc>http://localhost:1313/references/</loc>
   </url>
 </urlset>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amplitude | Evan Matthews</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/resume/resume.pdf">Resume</a></li>
+      
+      <li><a href="/cv/cv.pdf">CV</a></li>
+      
+      <li><a href="/post/">Updates</a></li>
+      
+      <li><a href="/note/">Personal Blog</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Amplitude</span></h1>
+
+<h2 class="date">2023/07/03</h2>
+</div>
+
+<main>
+<h1 id="amplitude">Amplitude</h1>
+<p>The <strong>amplitude</strong> of a sound is physically defined as the amount of displacement produced by sound waves onto air particles. From the listener&rsquo;s point of view, this variable represents the &ldquo;volume&rdquo; of the sound.</p>
+<p>$$S(t) = A\sin(\omega t + \phi)$$</p>
+<p>Given a sinusoidal function, we define $A$ to be our peak amplitude, or the highest volume that our sound reaches. That is, $\forall t \in \Reals, \space x(t) \in [-A, A] $, (for all inputs $t$, representing time in our sinusoidal function, $x(t)$ will always be between and include $-A$ and $A$).</p>
+<p>We can define the amplitude value $A$ in one of two ways:</p>
+<ol>
+<li>
+<p>as a constant $a \in \Reals$, where the volume remains the same for all $t$.</p>
+</li>
+<li>
+<p>as a function $A(t)$, where $t\in\Reals$, and the volume can change over time.</p>
+</li>
+</ol>
+<p>Using amplitude as a function of time, we can freely define how sound is outputted over time. For example, suppose we want a sample $S$ that is $n$ seconds long to fade in over the course of $m$ seconds. We can define $A(t)$ as</p>
+<p>$$A(t) = \begin{cases} \frac{t}{m} &amp;&amp; t \lt m \\ 1 &amp;&amp; m \le t \le n\end{cases}$$</p>
+<p>where $A(t)$ is a <em>piecewise function</em> with two parts: in the first part, $A(t)$ linearly increases from $0$ to $1$ as $t$ approaches $m$; in the second part, $A(t)$ is a constant $1$ for the remainder of the function.</p>
+<p>Similarly, we can define a function which fades out a sound for the last $m$ seconds as</p>
+<p>$$A(t) = \begin{cases} 1 &amp;&amp; t \le n - m \\ \frac{n - t}{m} &amp;&amp; n - m \lt t \le n\end{cases}$$</p>
+<p>where $A(t)$ is constant for $t\in [0, n-m)$ and linearly decreasing for $t\in (n-m, n]$.</p>
+<p>Lastly, we can combine both filters into a single piecewise function, giving us the effects of both:</p>
+<p>$$A(t) = \begin{cases} \frac{t}{m} &amp;&amp; t \lt m \\ 1 &amp;&amp; m \le t \le n - m \\ \frac{n - t}{m} &amp;&amp; n - m \lt t \le n\end{cases}$$</p>
+<hr>
+<h1 id="units">Units</h1>
+<p>In practical application, it is better to define amplitude in some physical unit of loudness rather than just an arbitrary unit. Amplitude is commonly define in terms of <strong>Decibels (dB)</strong>, and the unit conversion is</p>
+<p>$$\text{dB}(t) = \log10(\frac{A(t)}{|A_{\text{ref}}|})$$</p>
+<p>where $|A_{\text{ref}}|$ is the greatest amplitude encountered in the entire sound. This function attempts to scale all amplitude values to the acceptable hearing range of $(-\infty, 0] \text{ dB}$, though that doesn&rsquo;t mean that values above $0 \text{ dB}$ aren&rsquo;t possible. Any values above $0 \text{ dB}$ represent undesirably loud values (which should be mitigated at all times, in order to protect your hearing and your audio equipment.)</p>
+<p>For a practical example, suppose a sound $S$, normalized to amplitude values in the range $A(t)\in[-1.0, 1.0]$, contains some values that are too loud for normal listening. If we want a cutoff of $c = 0.8$ applied to the entire sound, we can substitute $A$ for</p>
+<p>$$A_\text{cutoff}(t) = \begin{cases} c &amp;&amp; A(t) \ge c \\ A(t) &amp;&amp; \text{otherwise}\end{cases}$$</p>
+<p>which will &ldquo;plateau&rdquo; any values above $c$, essentially rescaling amplitude while maintaining the loudness of existing values in our sound.</p>
+<!-- # References
+
+- [Global JOS Index: Amplitude](https://ccrma.stanford.edu/~jos/filters/Units.html#19668) -->
+</main>
+
+  <footer>
+  
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+  
+  <hr/>
+  © Evan Matthews 2025 | <a href="https://github.com/evanmm3">Github</a> | <a href="https://www.linkedin.com/in/ematth/">LinkedIn</a>
+  
+  </footer>
+  </body>
+</html>
+
