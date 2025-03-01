@@ -5,7 +5,7 @@ disable_python: true
 ---
 <br>
 
-<img src="/img/aboutpic.JPG" alt="Picture of Evan Matthews" width=800 height=550>
+<img src="/img/aboutpic.JPG" alt="Picture of Evan Matthews">
 
 **Evan Michael Matthews** is a masters student in computer science at the University of Illinois Urbana-Champaign. His research focuses on audio computing and AI/ML, more specifically the improvement of AI audio generation and lossless translation between sheet music and audio. He is a member of the CS Audio Lab, under thesis advising from [Paris Smaragdis](https://paris.cs.illinois.edu) and additional research guidance from [Minje Kim](https://minjekim.com/).
 
