@@ -4,7 +4,7 @@ date: 2025-04-04
 author: Evan Matthews
 categories:
     - Other
-draft: True
+tags:
 ---
 
 OpenAI's [newest image generation model](https://openai.com/index/introducing-4o-image-generation/) has radically change the landscape of AI-generated images, (*for better, or for worse*).

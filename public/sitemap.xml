@@ -11,13 +11,16 @@
     <loc>http://localhost:1313/categories/other/</loc>
     <lastmod>2025-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/2025/04/04/playing-with-4o-image-generation/</loc>
+    <loc>http://localhost:1313/note/</loc>
     <lastmod>2025-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>http://localhost:1313/note/playing-with-4o-image-generation/</loc>
     <lastmod>2025-04-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/2025/03/01/cslsc-2025/</loc>
+    <lastmod>2025-03-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/coding/</loc>
@@ -27,9 +30,6 @@
     <lastmod>2024-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/note/cool-python-tidbits-i-enjoy-using/</loc>
-    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/note/</loc>
     <lastmod>2024-02-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/python/</loc>

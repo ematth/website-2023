@@ -13,14 +13,14 @@
       <link>http://localhost:1313/post/2023/06/03/latex-for-note-taking/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/2023/06/03/latex-for-note-taking/</guid>
-      <description>&lt;h1 id=&#34;latex&#34;&gt;$\LaTeX$&lt;/h1&gt;&#xA;&lt;p&gt;LaTeX, pronounced &amp;ldquo;lah-tech&amp;rdquo; or &amp;ldquo;lay-tech&amp;rdquo;, is a typesetting system based on the TeX language. It was developed in 1985 by American computer scientist Leslie Lamport, who wrote the package due to his frequent use of shortcuts for mathematical and scientific symbols in his own writing. Since then, it has become a staple in the world of academia as one of the premier document-writing tools with numerous integrations and extensions to the LaTeX package.&lt;/p&gt;</description>
+      <description>$\LaTeX$ LaTeX, pronounced &amp;ldquo;lah-tech&amp;rdquo; or &amp;ldquo;lay-tech&amp;rdquo;, is a typesetting system based on the TeX language. It was developed in 1985 by American computer scientist Leslie Lamport, who wrote the package due to his frequent use of shortcuts for mathematical and scientific symbols in his own writing. Since then, it has become a staple in the world of academia as one of the premier document-writing tools with numerous integrations and extensions to the LaTeX package.</description>
     </item>
     <item>
       <title>How I Made this Website</title>
       <link>http://localhost:1313/note/how-i-made-this-website/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/note/how-i-made-this-website/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;⚠️ This article assumes you have a decent understanding about console commands and Git.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;I have something rather important to get off my chest:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;I don&#39;t like web dev.&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;There, I said it. I&#39;ve used plenty of tools in the past, including HTML, CSS and Javascript, yet the idea of making websites never truly stuck. To me, there was always an additional layer of complication that I could never get around. However, there are plenty of tools nowadays that get around the tedium of having to type an endless amount of style and formatting code to make a nice-looking website. This article will hopefully introduce you to a number of tools I&#39;ve been using to make this website and will hopefully stop you from having to touch &lt;i&gt;javascript&lt;/i&gt; 🤮 or do any actual web programming.&lt;/p&gt;</description>
+      <description>⚠️ This article assumes you have a decent understanding about console commands and Git.&#xA;Introduction I have something rather important to get off my chest:&#xA;I don&#39;t like web dev.&#xD;There, I said it. I&#39;ve used plenty of tools in the past, including HTML, CSS and Javascript, yet the idea of making websites never truly stuck. To me, there was always an additional layer of complication that I could never get around.</description>
     </item>
   </channel>
 </rss>
