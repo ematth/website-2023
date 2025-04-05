@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Playing with 4o Image Generation | Evan Matthews</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/resume/resume.pdf">Resume</a></li>
+      
+      <li><a href="/cv/cv.pdf">CV</a></li>
+      
+      <li><a href="/post/">Updates</a></li>
+      
+      <li><a href="/note/">Personal Blog</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Playing with 4o Image Generation</span></h1>
+<h2 class="author">Evan Matthews</h2>
+<h2 class="date">2025/04/04</h2>
+</div>
+
+<main>
+<p>OpenAI&rsquo;s <a href="https://openai.com/index/introducing-4o-image-generation/">newest image generation model</a> has radically change the landscape of AI-generated images, (<em>for better, or for worse</em>).
+Admittedly, I&rsquo;ve acted like a &ldquo;kid on Christmas morning&rdquo; for the past two weeks messing around with this model, and I figured what better than to post my use cases and results.</p>
+<p>For the record: this isn&rsquo;t to start some argument about AI art being slop or conflicting with copyright.
+I&rsquo;m of the opinion that, as much as Image generation trivializes the manual work of drawing/painting art, it&rsquo;s by no means a replacement.
+Making good art requires a level of creativity and artistic know-how, something that image generators don&rsquo;t provide to the average person.
+That is, while the average person can make something slightly better thanks to this new model, trained artists will always have the upper hand, being able to communicate in a language of artistic experience that helps fine-tune the generative process.
+Call me optimistic, but we might even start to see more artists incorporating AI tools into their toolbox, such as to reduce time on tedious tasks or to make quick art drafts for clients.</p>
+<p>Anyway, here&rsquo;s all the concepts and styles I&rsquo;ve tried so far:</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;">
+    <div style="flex: 0 0 49%;">
+        <img src="evan.jpg" alt="AI generated profile picture 1" style="width: 100%;">
+        <p style="text-align: center; margin-top: 5px;">Original photo</p>
+    </div>
+    <div style="flex: 0 0 49%;">
+        <img src="evan-chatgpt.png" alt="AI generated profile picture 3" style="width: 100%;">
+        <p style="text-align: center; margin-top: 5px;">Studio Ghibli (<i>Ah, the acne!</i>)</p>
+    </div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;">
+    <div style="flex: 0 0 49%;">
+        <img src="evan-chatgpt2.png" alt="AI generated profile picture 1" style="width: 100%;">
+        <p style="text-align: center; margin-top: 5px;">Elden Ring</p>
+    </div>
+    <div style="flex: 0 0 49%;">
+        <img src="evan-chatgpt3.png" alt="AI generated profile picture 3" style="width: 100%;">
+        <p style="text-align: center; margin-top: 5px;">LEGO Minifigure</p>
+    </div>
+</div>
+<p>For the next pair of images, I told ChatGPT to generate an image in the style of &ldquo;the average twitter artist.&rdquo; While I can&rsquo;t be certain that ChatGPT is truly capable of such a style, I did take a liking to its result.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;">
+    <div style="flex: 0 0 49%;">
+        <img src="twitter-artist.png" alt="AI generated profile picture 1" style="width: 100%;">
+        <p style="text-align: center; margin-top: 5px;">"The average Twitter artist"</p>
+    </div>
+    <div style="flex: 0 0 49%;">
+        <img src="evan-chatgpt5.png" alt="AI generated profile picture 3" style="width: 100%;">
+        <p style="text-align: center; margin-top: 5px;">Me, in said style</p>
+    </div>
+</div>
+<p>The very first set of images I did with the new model was to Ghibli-fy my girlfriend, Tegan. All of the small details- hairstrands, the water, the bridge in the background- really sold the idea that this new model was going to be drastically different. Not that the first image was easy- it took a couple different follow-up prompts to fix some small things that stood out too much.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;">
+    <div style="flex: 0 0 49%;">
+        <img src="tegan.png" alt="AI generated profile picture 1" style="width: 100%;">
+        <!-- <p style="text-align: center; margin-top: 5px;">Original photo</p> -->
+    </div>
+    <div style="flex: 0 0 49%;">
+        <img src="tegan-chatgpt.png" alt="AI generated profile picture 3" style="width: 100%; height: 88%; object-fit: cover;">
+        <!-- <p style="text-align: center; margin-top: 5px;">Original photo</p> -->
+    </div>
+</div>
+<p>Much later, I thought about making her a fun picture we could frame. I ended up turning her pet lizard into a wizard, sitting proudly atop her faux-rock cave.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;">
+    <div style="flex: 0 0 49%;">
+        <img src="lizard.jpeg" alt="AI generated profile picture 1" style="width: 100%; height: 88%; object-fit: cover;">
+    </div>
+    <div style="flex: 0 0 49%;">
+        <img src="lizard-chatgpt.png" alt="AI generated profile picture 3" style="width: 100%; height: 88%; object-fit: cover;">
+    </div>
+</div>
+<p>Long ago, I commissioned an image in the style of <a href="https://www.youtube.com/c/LofiGirl">Lofi Girl</a> for a Spotify playlist cover. I came back to this image to see how generation would fill in the window behind the student. It also took a couple follow-up prompts to get some of the small details, such as a collegiate club&rsquo;s acronym on the headphones, and twin ponytails.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;">
+    <div style="flex: 0 0 32%;">
+        <img src="lofi.png" alt="AI generated profile picture 1" style="width: 100%;">
+        <p style="text-align: center; margin-top: 5px;">Original photo</p>
+    </div>
+    <div style="flex: 0 0 32%;">
+        <img src="lofi-chatgpt.png" alt="AI generated profile picture 3" style="width: 100%;">
+        <p style="text-align: center; margin-top: 5px;">Original photo</p>
+    </div>
+    <div style="flex: 0 0 32%;">
+        <img src="lofi-chatgpt2.png" alt="AI generated profile picture 3" style="width: 100%;">
+        <p style="text-align: center; margin-top: 5px;">Original photo</p>
+    </div>
+</div>
+
+</main>
+
+  <footer>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+  
+  <hr/>
+  © Evan Matthews 2025 | <a href="https://github.com/evanmm3">Github</a> | <a href="https://www.linkedin.com/in/ematth/">LinkedIn</a>
+  
+  </footer>
+  </body>
+</html>
+
